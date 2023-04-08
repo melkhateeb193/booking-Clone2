@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    font-size: 14px;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+header {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5))  , url(/images/208091804.jpg);
+    background-position: 100% 50%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 1rem ;
+    margin: 0;
+  }
+
+
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  nav h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 0.5rem;
+    
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+}
+
+section ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+section li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 2.5rem;
+    width: 6.25rem;
+    height: 1.875rem;
+}
+
+section a {
+    color: white;;
+    text-decoration: none;
+}
+
+
+section div {
+    margin-top: 2rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+
+.registerBtn , .signInBtn   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    width: 70px;
+    height: 30px ;
+    background-color: white;
+    cursor: pointer;
+    color: #003580;
+}
+img#ukImage{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+i.fa-solid.fa-question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+i {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+}
+
+#searchBar {
+  border-collapse: collapse;
+}
+#searchItem1 {
+  width: 35%;
+  border: 2px solid orange ;
+}
+#searchItem2 {
+  width: 35%;
+  border: 2px solid orange ;
+
+}
+#searchItem3 {
+  border: 2px solid orange ;
+  width: 35%;
+}
+#warning {
+  border: 1px solid rgb(222, 213, 213) ;
+  width: 100%;
+height: 50px;
+}
+#recentSrc{
+  border-radius: 3%;
+  box-shadow: 1px 1px 10px rgb(110, 106, 106) ;
+  width: 32.5%;
+  position: relative;
+}
+
+#imgContainer {
+  width: 20% ; 
+  height: 100% ;
+}
+
+#bali {
+  width: 100%;
+  height: 100%;
+}
+#arrow-right {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 3.5%;
+  bottom: -13%;
+  cursor: pointer;
+  z-index: 1;
+  background-color: white;
+  border-color: #9aafb4 !important;
+
+}
+#arrow-left {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 3.5%;
+  bottom: -14.5%;
+  cursor: pointer;
+  z-index: 1;
+  background-color: white;
+  display: none !important;;
+}
+
+#offersSection {
+border-radius: 10px;
+width: 100%;
+height: 180px;
+background-image: url(/images/184699273.jpeg);
+background-size: cover;
+background-position: center center;
+overflow: hidden;
+}
+.explorSec {
+  position: relative;
+}
+#arrow-rightExplor{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 2.5%;
+  bottom: 41%;
+  cursor: pointer;
+  z-index: 1;
+  background-color: white;
+  border-color: #9aafb4 !important;
+}
+#arrow-leftExplor{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 1%;
+  bottom: 41%;
+  cursor: pointer;
+  z-index: 1;
+  background-color: white;
+  border-color: #9aafb4 !important;
+  display: none !important;
+}
+#explor1{
+  background-image: url(/images/dahab.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center ;
+  width: 49% !important;
+  height: 250px !important;
+}
+#explor2{
+  background-image: url(/images/Sharmelshek.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center ;
+  width: 49% !important;
+  height: 250px !important;
+}
+#egyptFlag {
+  width: 20px;
+  height: 15px;
+}
