@@ -6,6 +6,10 @@
     font-family: 'Work Sans', sans-serif;
   }
 
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
 header {
     background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5))  , url(/images/208091804.jpg);
     background-position: 100% 50%;
@@ -246,4 +250,57 @@ overflow: hidden;
 #egyptFlag {
   width: 20px;
   height: 15px;
+}
+#explor3 {
+  background-image: url(/images/cairo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center ;
+  width: 32.5% !important;
+  height: 250px !important;
+}
+#explor4 {
+  background-image: url(/images/hurgada.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center ;
+  width: 32.5% !important;
+  height: 250px !important;
+}
+#explor5 {
+  background-image: url(/images/nuawbai.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center ;
+  width: 32.5% !important;
+  height: 250px !important;
+}
+
+/* footer */
+
+.upperFooter {
+  background-color: #003580;
+}
+
+.pargraphFooter{
+  font-size: 14px;
+}
+.upperFooter1{
+  background-color: #396fbb;
+}
+.upperFooterLi {
+  list-style: none;
+  text-decoration: underline;
+  font-weight: bolder;
+  padding: 6px;
+  cursor: pointer;
+}
+#footerLi {
+  width: 20% !important;
+}
+#footerLi ul li {
+list-style: none;
+cursor: pointer;
+color: rgb(72, 72, 190);
+font-size: 12px;;
 }
