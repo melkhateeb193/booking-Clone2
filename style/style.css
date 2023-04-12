@@ -6,6 +6,10 @@
     font-family: 'Work Sans', sans-serif;
   }
 
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
 header {
     background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5))  , url(/images/208091804.jpg);
     background-position: 100% 50%;
@@ -19,8 +23,6 @@ header {
     margin: 0;
   }
 
-
-  
   nav {
     display: flex;
     justify-content: space-between;
@@ -28,7 +30,7 @@ header {
     width: 100%;
     padding: 1rem;
   }
-  
+
   nav h1 {
     font-size: 2rem;
     font-weight: bold;
@@ -61,7 +63,6 @@ section {
     flex-direction: column;
     width: 100%;
     max-width: 1200px;
-    padding: 2rem;
 }
 
 section ul {
@@ -156,7 +157,6 @@ height: 50px;
   border-radius: 3%;
   box-shadow: 1px 1px 10px rgb(110, 106, 106) ;
   width: 32.5%;
-  position: relative;
 }
 
 #imgContainer {
@@ -168,29 +168,41 @@ height: 50px;
   width: 100%;
   height: 100%;
 }
+.row.d-flex.justify-content-between {
+position: relative;
+}
 #arrow-right {
   position: absolute;
   width: 30px;
   height: 30px;
-  right: 3.5%;
-  bottom: -13%;
+  right: 7%;
+  bottom: -3.6%;
   cursor: pointer;
   z-index: 1;
   background-color: white;
-  border-color: #9aafb4 !important;
-
+  border-color: #292c2c !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
 }
+
 #arrow-left {
   position: absolute;
   width: 30px;
   height: 30px;
-  left: 3.5%;
-  bottom: -14.5%;
+  left: 7%;
+  bottom: -3.6%;
   cursor: pointer;
   z-index: 1;
   background-color: white;
-  display: none !important;;
+  display: none !important;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+  border: 1px solid rgb(192, 177, 177);
 }
+
 
 #offersSection {
 border-radius: 10px;
@@ -201,32 +213,7 @@ background-size: cover;
 background-position: center center;
 overflow: hidden;
 }
-.explorSec {
-  position: relative;
-}
-#arrow-rightExplor{
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  right: 2.5%;
-  bottom: 41%;
-  cursor: pointer;
-  z-index: 1;
-  background-color: white;
-  border-color: #9aafb4 !important;
-}
-#arrow-leftExplor{
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  left: 1%;
-  bottom: 41%;
-  cursor: pointer;
-  z-index: 1;
-  background-color: white;
-  border-color: #9aafb4 !important;
-  display: none !important;
-}
+
 #explor1{
   background-image: url(/images/dahab.jpg);
   background-size: cover;
@@ -246,4 +233,57 @@ overflow: hidden;
 #egyptFlag {
   width: 20px;
   height: 15px;
+}
+#explor3 {
+  background-image: url(/images/cairo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center ;
+  width: 32.5% !important;
+  height: 250px !important;
+}
+#explor4 {
+  background-image: url(/images/hurgada.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center ;
+  width: 32.5% !important;
+  height: 250px !important;
+}
+#explor5 {
+  background-image: url(/images/nuawbai.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center ;
+  width: 32.5% !important;
+  height: 250px !important;
+}
+
+/* footer */
+
+.upperFooter {
+  background-color: #003580;
+}
+
+.pargraphFooter{
+  font-size: 14px;
+}
+.upperFooter1{
+  background-color: #396fbb;
+}
+.upperFooterLi {
+  list-style: none;
+  text-decoration: underline;
+  font-weight: bolder;
+  padding: 6px;
+  cursor: pointer;
+}
+#footerLi {
+  width: 20% !important;
+}
+#footerLi ul li {
+list-style: none;
+cursor: pointer;
+color: rgb(72, 72, 190);
+font-size: 12px;;
 }

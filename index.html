@@ -12,36 +12,36 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <header >
-        <nav class="pe-4 ps-4">
-          <h3 class="fw">Booking.com</h3>
-          <ul>
-            <li><a href="#">EGP</a></li>
-            <li><a href="#"><img id="ukImage"  src="images/Flag_of_the_United_Kingdom_(3-5).svg.webp" alt="Booking.com logo"></a></li>
-            <li class="customerService"><a href="#"><i class="fa-solid fa-question"></i></li>
-            <li><a href="#">List Your Property</a></li>
-            <li><a href="#" class="registerBtn">Register</a></li>
-            <li><a href="#" class="signInBtn">Sign In</a></li>
-          </ul>
-        </nav>
-        <section>
-          <ul>
-            <li><a href="#">Stays</a></li>
-            <li><a href="#">Flights</a></li>
-            <li><a href="#">Car Rentals</a></li>
-            <li><a href="#">Attractions</a></li>
-            <li><a href="#">Airport Taxis</a></li>
-          </ul>
-          <div class="w-50 h-auto p-3">
-            <h2>Find great getway, your way</h2>
-            <p class="font-monospace">Save at least 15%  on the stays worldwide, from relaxing retreats to off-grid adventures</p class="">
-            <button class="btn btn-primary"> Find Gateway Deals </button>
-          </div>
-        </section>
+    <header class="py-5">
+      <nav class="pe-4 ps-4">
+        <h3 class="fw">Booking.com</h3>
+        <ul>
+          <li><a href="#">EGP</a></li>
+          <li><a href="#"><img id="ukImage" src="images/Flag_of_the_United_Kingdom_(3-5).svg.webp" alt="Booking.com logo"></a></li>
+          <li class="customerService"><a href="#"><i class="fa-solid fa-question"></i></a></li>
+          <li><a href="#">List Your Property</a></li>
+          <li><a href="#" class="registerBtn">Register</a></li>
+          <li><a href="#" class="signInBtn">Sign In</a></li>
+        </ul>
+      </nav>
+      <section>
+        <ul>
+          <li><a href="#">Stays</a></li>
+          <li><a href="#">Flights</a></li>
+          <li><a href="#">Car Rentals</a></li>
+          <li><a href="#">Attractions</a></li>
+          <li><a href="#">Airport Taxis</a></li>
+        </ul>
+        <div class="w-50 h-auto p-3">
+          <h2>Find great getaway, your way</h2>
+          <p class="font-monospace">Save at least 15% on stays worldwide, from relaxing retreats to off-grid adventures</p>
+          <button class="btn btn-primary">Find Gateway Deals</button>
+        </div>
+      </section>
     </header>
-    <main class="p-5"> 
+    <main class="py-5 container"> 
       <!-- search bar section -->
-      <div id="searchBar" class="container-fluid d-flex">
+      <div id="searchBar" class=" d-flex">
         <div id="searchItem1">
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -59,25 +59,26 @@
           </form>
         </div>
       </div>
+      <!-- form check -->
       <div class="d-flex p-1">
-      <div class="p-2">
-        <input class="form-check-input" type="checkbox" id="checkbox1">
-        <label class="form-check-label" for="checkbox1">I'm looking for an entire house or apartment</label>
+        <div class="p-2">
+          <input class="form-check-input" type="checkbox" id="checkbox1">
+          <label class="form-check-label" for="checkbox1">I'm looking for an entire house or apartment</label>
+        </div>
+        <div class="p-2">
+          <input class="form-check-input" type="checkbox" id="checkbox2">
+          <label class="form-check-label" for="checkbox2">I'm travelling for work</label>
+        </div>
       </div>
-      <div class="p-2">
-        <input class="form-check-input" type="checkbox" id="checkbox1">
-        <label class="form-check-label" for="checkbox1"> I'm travelling for work</label>
-      </div>
-    </div>
       <!-- covid section -->
       <div id="warning" class="border-1 d-flex align-items-center p-3 m-2">
         <i class="fas fa-exclamation-circle"></i>
-       <p class="pt-2"> Get the advice you need. Check the latest COVID-19 restrictions before you travel. <a href="">Learn more</a></p>
+        <p class="pt-2">Get the advice you need. Check the latest COVID-19 restrictions before you travel. <a href="">Learn more</a></p>
       </div>
       <!-- recent search section -->
-      <section class="resntSec">
+      <section class="resntSec mt-5">
         <h3> Your recent searches</h3>
-        <div class="row  d-flex  justify-content-between ">
+        <div class="row  d-flex  justify-content-between">
           <div id="recentSrc" class="col-md-3 d-flex  h-auto p-4 m-0">
             <div id="imgContainer" class="imgBali  border rounded-3 overflow-hidden m-0 ">
               <img id="bali"  src="images/recent src images/172380176.jpg" alt="">
@@ -114,7 +115,7 @@
             </div>
       </section>
       <!-- offers section -->
-      <section>
+      <section class="mt-5">
         <h3>Offers</h3>
         <p class="p-0 m-0"> Promotions, deals and special offers for you</p>
         <div id="offersSection" class="d-flex flex-column justify-content-center text-white ps-4">
@@ -124,10 +125,10 @@
         </div>
       </section>
       <!-- explor sec -->
-      <section class="explorSec">
+      <section class="explorSec mt-5">
         <h3> Explore Indonesia</h3>
         <p>These popular destinations have a lot to offer</p>
-        <div class="row w-100">
+        <div class="explorSec row w-100">
           <div class="col-md-2 d-flex flex-column">
             <div class="imgExplorCont rounded-1 overflow-hidden">
               <img src="images/ex1.jpg" alt="firstImg">
@@ -183,16 +184,15 @@
             </div>
           </div>
         </div>
-        <div id="arrow-rightExplor" class="rounded-5 d-flex justify-content-center align-items-center  shadow">
+        <!-- <div id="arrow-rightExplor" class="rounded-5 d-flex justify-content-center align-items-center  shadow">
           <i  class=" d-flex justify-content-center align-items-center fa-solid fa-angle-right "></i>
         </div>
         <div id="arrow-leftExplor" class=" rounded-5 d-flex justify-content-center align-items-center shadow">
         <i class="d-flex justify-content-center align-items-center fa-solid fa-angle-left"></i>
-          </div>
+          </div> -->
       </section>
       <!-- cities section  -->
-      <!-- complete the rest mK -->
-      <section>
+      <section class="mt-5">
         <div class="container">
           <div class="row d-flex justify-content-between">
             <div id="explor1" class="col-md-5 text-white pt-4 ps-3 d-flex ">
@@ -203,10 +203,202 @@
               <p class="m-0">EGP 287.10</p>
              </div>
             </div>
-
+            <div id="explor2" class="col-md-5 text-white pt-4 ps-3 d-flex ">
+              <h3 class="fw-bold">sharm El sheikh</h3>
+             <img id="egyptFlag" class="m-2" src="images/Flag_of_Egypt.svg.png" alt="Booking.com logo">
+             <div class=" bg-danger w-25 h-25 d-flex justify-content-center align-items-center flex-column  align-self-baseline ">
+              <p class="m-0">Deal starts at</p>
+              <p class="m-0">EGP 301.10</p>
+             </div>
+            </div>
+          </div>
+          <div class="row mt-3  d-flex justify-content-between">
+            <div id="explor3" class="col-md-4">
+              <h3 class="fw-bold">Cairo</h3>
+              <img id="egyptFlag" class="m-2" src="images/Flag_of_Egypt.svg.png" alt="Booking.com logo">
+              <div class=" bg-danger w-25 h-25 d-flex justify-content-center align-items-center flex-column  align-self-baseline ">
+                <p class="m-0">Deal starts at</p>
+              <p class="m-0">EGP 208</p>
+              </div>
+            </div>
+            <div id="explor4" class="col-md-4 ">
+              <h3 class="fw-bold">Hurgada</h3>
+              <img id="egyptFlag" class="m-2" src="images/Flag_of_Egypt.svg.png" alt="Booking.com logo">
+              <div class=" bg-danger w-25 h-25 d-flex justify-content-center align-items-center flex-column  align-self-baseline ">
+                <p class="m-0">Deal starts at</p>
+              <p class="m-0">EGP 158</p>
+              </div>
+            </div>
+            <div id="explor5" class="col-md-4 ">
+              <h3 class="fw-bold">nuweiba</h3>
+              <img id="egyptFlag" class="m-2" src="images/Flag_of_Egypt.svg.png" alt="Booking.com logo">
+              <div class=" bg-danger w-25 h-25 d-flex justify-content-center align-items-center flex-column  align-self-baseline ">
+                <p class="m-0">Deal starts at</p>
+              <p class="m-0">EGP 699.10</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+      <!-- proprty type -->
+      <section class="proprtyType mt-5">
+        <h3>Browse by property type</h3>
+        <div class="row w-100">
+          <div class="col-md-3 d-flex flex-column">
+            <div class="imgExplorCont rounded-1 overflow-hidden">
+              <img src="images/ex1.jpg" alt="firstImg">
+            </div>
+            <div class="txtExplorCont m-0 p-0 ">
+              <p class="fw-bolder m-0 p-1"> Bali</p>
+                <p class="exploreP1">12,688 properties</p>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex flex-column">
+            <div class="imgExplorCont rounded-1 overflow-hidden">
+              <img src="images/ex2.jpg" alt="secImg">
+            </div>
+            <div class="txtExplorCont m-0 p-0 ">
+              <p class="fw-bolder m-0 p-1"> Ubud</p>
+                <p class="exploreP1">2,394 properties</p>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex flex-column">
+            <div class="imgExplorCont rounded-1 overflow-hidden">
+              <img src="images/ex3.jpg" alt="thirdImg">
+            </div>
+            <div class="txtExplorCont m-0 p-0 ">
+              <p class="fw-bolder m-0 p-1"> Kuta</p>
+                <p class="exploreP1">534 properties</p>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex flex-column">
+            <div class="imgExplorCont rounded-1 overflow-hidden">
+              <img src="images/ex4.jpg" alt="fourthImg">
+            </div>
+            <div class="txtExplorCont m-0 p-0 ">
+              <p class="fw-bolder m-0 p-1">Canggu</p>
+                <p class="exploreP1"> 1,589 properties</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- <div id="arrow-rightExplor" class="rounded-5 d-flex justify-content-center align-items-center  shadow">
+          <i  class=" d-flex justify-content-center align-items-center fa-solid fa-angle-right "></i>
+        </div>
+        <div id="arrow-leftExplor" class=" rounded-5 d-flex justify-content-center align-items-center shadow">
+        <i class="d-flex justify-content-center align-items-center fa-solid fa-angle-left"></i>
+          </div> -->
+      </section>
     </main>
+    <!-- footer -->
+    <div class="upperFooter py-5 text-white d-flex justify-content-center align-items-center flex-column text-center">
+      <div class="w-50 d-flex justify-content-center align-items-center flex-column">
+      <h3>Save time, save money!</h3>
+      <p>Sign up and we'll send the best deals to you</p>
+      <form class=" form-text d-flex w-75 "> 
+        <input type="email" class="form-control " placeholder="Email@example.com" id="emailInput2" required>
+        <button type="submit" class="btn  btn-primary ms-3 p-3">Subscribe</button>
+      </form>
+      </div>
+      </div>
+    <div class="upperFooter1 py-3 text-white d-flex justify-content-center align-items-center flex-column text-center">
+        <button type="submit" class="btn border">List your property</button>
+      </div>
+    <div class="upperFooter1 mt-1 py-3 text-white d-flex justify-content-center  flex-column">
+      <ul class="d-flex " >
+        <li class="upperFooterLi">Mobile version</li>
+        <li class="upperFooterLi">Your account</li>
+        <li class="upperFooterLi">Make changes to your booking online</li>
+        <li class="upperFooterLi">Customer Service help</li>
+        <li class="upperFooterLi">Become an affiliate</li>
+        <li class="upperFooterLi">Booking.com for Business</li>
+      </ul>
+    </div>
+    <footer class="Footer w-100 p-5 d-flex flex-column justify-content-center align-items-center">
+      <div class="row w-100 ">
+        <div id="footerLi" class="col-md-2 ">
+          <ul>
+            <li>Regions</li>
+            <li>Cities</li>
+            <li >Districts</li>
+            <li >Airports</li>
+            <li >Hotels</li>
+            <li >Places of interest</li>
+          </ul>
+        </div> 
+        <div id="footerLi"  class="col-md-2">
+          <ul>
+            <li >Homes</li>
+            <li>Apartments</li>
+            <li >Villas</li>
+            <li >Hostels</li>
+            <li >B&Bs</li>
+            <li >Guest houses</li>
+          </ul>
+        </div> 
+        <div id="footerLi"  class="col-md-2">
+          <ul>
+            <li >Unique places to stay</li>
+            <li>All destinations</li>
+            <li >All flight destinations</li>
+            <li >Discover</li>
+            <li >Reviews</li>
+            <li >Unpacked: Travel articles</li>
+            <li >Travel Communities</li>
+            <li >Seasonal and holiday deals</li>
+            <li >Traveller Review Awards</li>
+          </ul>
+        </div> 
+        <div id="footerLi"  class="col-md-2">
+          <ul>
+            <li >Car hire</li>
+            <li>Flight finder</li>
+            <li >Restaurant reservations</li>
+            <li >Booking.com for Travel Agents</li>
+          </ul>
+        </div> 
+        <div  id="footerLi" class="col-md-2">
+          <ul>
+            <li > Coronavirus (COVID-19) FAQs </li>
+            <li>About Booking.com</li>
+            <li >Customer Service help</li>
+            <li >Partner help</li>
+            <li >Careers</li>
+            <li >Press centre</li>
+            <li >Safety resource centre</li>
+            <li >Investor relations</li>
+            <li >Partner dispute</li>
+            <li >How we work</li>
+            <li >MSA Statement</li>
+            <li >Corporate contact</li>
+            <li >We Price Match</li>
+          </ul>
+        </div> 
+      </div>
+      <button class="btn w-25 mt-2 ">Extranet login</button>
+      <p class="mt-2">Booking.com is part of Booking Holdings Inc., the world leader in online travel and related services.</p>
+      <div>
+        <div class="row mt-2">
+          <div class="col-md-2"> 
+            <img src="images/booking .png" alt="booking">
+          </div>
+          <div class="col-md-2"> 
+            <img src="images/agoda.png" alt="booking">
+          </div>
+          <div class="col-md-2"> 
+            <img src="images/kayak.png" alt="booking">
+          </div>
+          <div class="col-md-2"> 
+            <img src="images/opentablespng.png" alt="booking">
+          </div>
+          <div class="col-md-2"> 
+            <img src="images/priceline.png" alt="booking">
+          </div>
+          <div class="col-md-2"> 
+            <img src="images/rentalsCars.png" alt="booking">
+          </div>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>
