@@ -12,33 +12,35 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <header >
-        <nav class="pe-4 ps-4">
-          <h3 class="fw">Booking.com</h3>
-          <ul>
-            <li><a href="#">EGP</a></li>
-            <li><a href="#"><img id="ukImage"  src="images/Flag_of_the_United_Kingdom_(3-5).svg.webp" alt="Booking.com logo"></a></li>
-            <li class="customerService"><a href="#"><i class="fa-solid fa-question"></i></li>
-            <li><a href="#">List Your Property</a></li>
-            <li><a href="#" class="registerBtn">Register</a></li>
-            <li><a href="#" class="signInBtn">Sign In</a></li>
-          </ul>
-        </nav>
-        <section>
-          <ul>
-            <li><a href="#">Stays</a></li>
-            <li><a href="#">Flights</a></li>
-            <li><a href="#">Car Rentals</a></li>
-            <li><a href="#">Attractions</a></li>
-            <li><a href="#">Airport Taxis</a></li>
-          </ul>
-          <div class="w-50 h-auto p-3">
-            <h2>Find great getway, your way</h2>
-            <p class="font-monospace">Save at least 15%  on the stays worldwide, from relaxing retreats to off-grid adventures</p class="">
-            <button class="btn btn-primary"> Find Gateway Deals </button>
-          </div>
-        </section>
+
+    <header class="py-5">
+      <nav class="pe-4 ps-4">
+        <h3 class="fw">Booking.com</h3>
+        <ul>
+          <li><a href="#">EGP</a></li>
+          <li><a href="#"><img id="ukImage" src="images/Flag_of_the_United_Kingdom_(3-5).svg.webp" alt="Booking.com logo"></a></li>
+          <li class="customerService"><a href="#"><i class="fa-solid fa-question"></i></a></li>
+          <li><a href="#">List Your Property</a></li>
+          <li><a href="#" class="registerBtn">Register</a></li>
+          <li><a href="#" class="signInBtn">Sign In</a></li>
+        </ul>
+      </nav>
+      <section>
+        <ul>
+          <li><a href="#">Stays</a></li>
+          <li><a href="#">Flights</a></li>
+          <li><a href="#">Car Rentals</a></li>
+          <li><a href="#">Attractions</a></li>
+          <li><a href="#">Airport Taxis</a></li>
+        </ul>
+        <div class="w-50 h-auto p-3">
+          <h2>Find great getaway, your way</h2>
+          <p class="font-monospace">Save at least 15% on stays worldwide, from relaxing retreats to off-grid adventures</p>
+          <button class="btn btn-primary">Find Gateway Deals</button>
+        </div>
+      </section>
     </header>
+    
     <main class="p-5"> 
       <!-- search bar section -->
       <div id="searchBar" class="container-fluid d-flex">
@@ -59,20 +61,21 @@
           </form>
         </div>
       </div>
+      <!-- form check -->
       <div class="d-flex p-1">
-      <div class="p-2">
-        <input class="form-check-input" type="checkbox" id="checkbox1">
-        <label class="form-check-label" for="checkbox1">I'm looking for an entire house or apartment</label>
+        <div class="p-2">
+          <input class="form-check-input" type="checkbox" id="checkbox1">
+          <label class="form-check-label" for="checkbox1">I'm looking for an entire house or apartment</label>
+        </div>
+        <div class="p-2">
+          <input class="form-check-input" type="checkbox" id="checkbox2">
+          <label class="form-check-label" for="checkbox2">I'm travelling for work</label>
+        </div>
       </div>
-      <div class="p-2">
-        <input class="form-check-input" type="checkbox" id="checkbox1">
-        <label class="form-check-label" for="checkbox1"> I'm travelling for work</label>
-      </div>
-    </div>
       <!-- covid section -->
       <div id="warning" class="border-1 d-flex align-items-center p-3 m-2">
         <i class="fas fa-exclamation-circle"></i>
-       <p class="pt-2"> Get the advice you need. Check the latest COVID-19 restrictions before you travel. <a href="">Learn more</a></p>
+        <p class="pt-2">Get the advice you need. Check the latest COVID-19 restrictions before you travel. <a href="">Learn more</a></p>
       </div>
       <!-- recent search section -->
       <section class="resntSec">
@@ -289,6 +292,7 @@
           </div> -->
       </section>
     </main>
+    <!-- footer -->
     <div class="upperFooter py-5 text-white d-flex justify-content-center align-items-center flex-column text-center">
       <div class="w-50 d-flex justify-content-center align-items-center flex-column">
       <h3>Save time, save money!</h3>
