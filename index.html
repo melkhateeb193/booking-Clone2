@@ -59,11 +59,11 @@
       <div id="searchBar" class="d-flex align-items-center justify-content-between p-3 rounded-1">
         <div id="searchItem1">
             <i class="fa-solid fa-bed"></i>
-            <input type="text" placeholder="where are you going?" class="headerSearchInput">
+            <input type="text" placeholder="where are you going?" class="headerSearchInput"  onclick="showPeopleNearby()">
         </div>
         <div id="searchItem1">
-            <i class="fa-solid fa-calendar"></i>
-         <span class="SearchTxt"> date to date </span> 
+          <i class="fa-regular fa-calendar"></i>
+          <span class="SearchTxt"> date to date </span> 
         </div>
         <div id="searchItem1">
           <i class="fa-solid fa-user"></i>
@@ -72,6 +72,16 @@
         <div id="searchItem1 w-100 p-5">
           <button  class="btn btn-primary "> Search</button>
         </div>
+      </div>
+      <!-- 1st div for the search bar with display None -->
+      <div id="peopleNearbyDiv" class="shadow">
+        <p class="fw-bold align-self-start">People Near Your Destination</p>
+        <ul>
+        <li> <i class="fa-solid fa-location-dot"></i> Hurgada</li>
+          <li> <i class="fa-solid fa-location-dot"></i> Dahab</li>
+          <li> <i class="fa-solid fa-location-dot"></i> sharm Elkshek</li>
+          <li> <i class="fa-solid fa-location-dot"></i> cairo</li>
+        </ul>
       </div>
       <!-- form check -->
       <div class="d-flex p-1">
@@ -414,5 +424,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.JS"></script>
 </body>
 </html>

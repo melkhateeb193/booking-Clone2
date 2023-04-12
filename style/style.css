@@ -294,3 +294,71 @@ cursor: pointer;
 color: rgb(72, 72, 190);
 font-size: 12px;;
 }
+
+  /* Style for the search item container */
+  #searchItem1 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    width: 300px;
+  }
+
+  /* Style for the search input field */
+  .headerSearchInput {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+
+  /* Style for the search button */
+  #searchButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  /* Style for the people nearby div */
+  #peopleNearbyDiv {
+    display: none;
+    margin-top: 16px;
+    padding: 16px;
+    background-color: white;
+    border-radius: 4px;
+    width: 400px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* Style for the people nearby div title */
+  #peopleNearbyDiv h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  /* Style for the people nearby div list */
+  #peopleNearbyDiv ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+ }
+
+  /* Style for the people nearby div list items */
+  #peopleNearbyDiv li {
+    margin-bottom: 8px;
+    border: 1px solid rgb(246, 238, 238);
+    padding: 20px;
+    cursor: pointer;
+    width: 100%;
+  }
