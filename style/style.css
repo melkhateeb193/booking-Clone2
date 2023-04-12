@@ -125,29 +125,36 @@ i.fa-solid.fa-question {
   align-items: center;
 }
 
-i {
+i.fa-solid.fa-question {
   border: 1px solid white;
   border-radius: 50%;
   width: 24px;
   height: 24px;
 }
-
+.headerListItems {
+  cursor: pointer !important;;
+}
+.headerListItems:hover {
+  background-color: #6d6767;
+  border: none ;
+}
 #searchBar {
-  border-collapse: collapse;
+  border: 3px solid orange ;
+  background-color: white;
+  position: absolute;
+  bottom: 17%;
+  right: 5%;
+  width: 90%;
 }
-#searchItem1 {
-  width: 35%;
-  border: 2px solid orange ;
+.headerSearchInput {
+  border: none;
+  outline: none;
 }
-#searchItem2 {
-  width: 35%;
-  border: 2px solid orange ;
+.SearchTxt {
+color: lightgray;
+cursor: pointer;
+}
 
-}
-#searchItem3 {
-  border: 2px solid orange ;
-  width: 35%;
-}
 #warning {
   border: 1px solid rgb(222, 213, 213) ;
   width: 100%;
@@ -175,8 +182,8 @@ position: relative;
   position: absolute;
   width: 30px;
   height: 30px;
-  right: 7%;
-  bottom: -3.6%;
+  right: 3%;
+  bottom: -24%;
   cursor: pointer;
   z-index: 1;
   background-color: white;
