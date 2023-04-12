@@ -1,0 +1,165 @@
+*, ::after, ::before{
+    box-sizing: border-box !important;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+.container-fluid{
+    padding: 0px;
+}
+
+#bgBlue{
+    width: 100%;
+    height: 7.8rem;
+    background-color: #003B95;
+}
+#bgBlue .row{
+    margin: 0 6rem 0rem 6rem;
+    /* background-color: aqua; */
+}
+#bgGray{
+    width: 100%;
+    height: 19rem;
+    background-color: #F5F5F5;
+}
+#logoName{
+    margin-top: 1.4rem;
+}
+#logoName p{
+    font-size: 1.5rem;
+    padding: 0px;
+}
+#headItems{
+    margin-top: 1.4rem;
+    text-align: end; 
+}
+#headItems button{
+    background-color: #003B95;
+    color: #F5F5F5;
+    border: none;
+    height: 3rem ;
+    width: 12%;
+}
+#headItems button:hover{
+    background-color: #1A4FA0;
+    
+}
+#currncy{
+    font-size: 1rem !important;
+}
+#headItems button img{
+    border-radius: 50%;
+    width: 1.5rem;
+}
+#helpIcon{
+    font-size: 1.3rem !important;
+}
+#reg{
+    background-color: white !important;
+    color:#1A4FA0 !important;
+    height: 2rem !important;
+    width: 13.5% !important;
+    border-radius: 0.2rem;
+    /* padding-bottom: 2rem !important; */
+    margin-right: 0.3rem;
+}
+#reg:hover{
+    background-color: #F0F6FD !important;
+}
+#mainBtns{
+    margin-top: 0.2px !important;
+    padding: 0px;
+}
+#mainBtns button{
+    color: white;
+    font-size: 0.91rem ;
+    height: 2.6rem;
+    border-radius: 5rem;
+}
+
+#mainBtns button:hover{
+    background-color: #1A4FA0;
+    border-radius: 5rem;
+}
+#btnRow i{
+    margin-right: 0.3rem;
+}
+#bgGray #centerRow{
+    margin: 0 6rem 0rem 6rem;
+    /* background-color: aqua; */
+    height: 19rem;
+    align-content: center;
+}
+#bgGray #centerRow .row{
+    margin-left: 6rem;
+}
+#bgGray #centerRow .row h1{
+    font-weight: bold;
+    font-size: 2rem !important;
+}
+#bgGray #centerRow .row p{
+    font-size: 1.25rem !important;
+}
+/* ----------------------------------------- */
+/* Body*/
+#conBody{
+    /* background-color: #F0F6FD; */
+    margin: 0 6rem 0rem 6rem;
+}
+#conBody .col-12{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#check{
+    display: flex;
+    margin: 3rem 0 3rem 0;
+    padding: 1rem;
+    border: solid 1px #E7E7E7;
+    border-radius: 0.5rem;
+}
+
+.para{
+    margin-left: 1rem;
+}
+#check div p{
+    margin-bottom: 0px;
+    padding-top: 0.5rem;
+    font-size: 0.9rem;
+}
+#check a{
+    padding-top: 0.5rem;
+    font-size: 0.9rem;
+}
+#infoIcon i{
+    font-size: 1.2rem;
+    color: #A0541F;
+
+
+}
+#infoIcon{
+    display: flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #FEF3EC;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3rem;
+
+}
+#check a{
+    margin-left: 0.3rem;
+}
+#check a:link{
+    text-decoration: none;
+}
+#check a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
