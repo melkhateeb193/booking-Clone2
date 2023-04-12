@@ -65,7 +65,6 @@ section {
     flex-direction: column;
     width: 100%;
     max-width: 1200px;
-    padding: 2rem;
 }
 
 section ul {
@@ -160,7 +159,6 @@ height: 50px;
   border-radius: 3%;
   box-shadow: 1px 1px 10px rgb(110, 106, 106) ;
   width: 32.5%;
-  position: relative;
 }
 
 #imgContainer {
@@ -172,29 +170,41 @@ height: 50px;
   width: 100%;
   height: 100%;
 }
+.row.d-flex.justify-content-between {
+position: relative;
+}
 #arrow-right {
   position: absolute;
   width: 30px;
   height: 30px;
-  right: 3.5%;
-  bottom: -13%;
+  right: 7%;
+  bottom: -3.6%;
   cursor: pointer;
   z-index: 1;
   background-color: white;
-  border-color: #9aafb4 !important;
-
+  border-color: #292c2c !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
 }
+
 #arrow-left {
   position: absolute;
   width: 30px;
   height: 30px;
-  left: 3.5%;
-  bottom: -14.5%;
+  left: 7%;
+  bottom: -3.6%;
   cursor: pointer;
   z-index: 1;
   background-color: white;
-  display: none !important;;
+  display: none !important;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+  border: 1px solid rgb(192, 177, 177);
 }
+
 
 #offersSection {
 border-radius: 10px;
