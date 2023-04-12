@@ -23,8 +23,6 @@ header {
     margin: 0;
   }
 
-
-  
   nav {
     display: flex;
     justify-content: space-between;
@@ -32,7 +30,7 @@ header {
     width: 100%;
     padding: 1rem;
   }
-  
+
   nav h1 {
     font-size: 2rem;
     font-weight: bold;
@@ -215,32 +213,7 @@ background-size: cover;
 background-position: center center;
 overflow: hidden;
 }
-.explorSec {
-  position: relative;
-}
-#arrow-rightExplor{
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  right: 2.5%;
-  bottom: 41%;
-  cursor: pointer;
-  z-index: 1;
-  background-color: white;
-  border-color: #9aafb4 !important;
-}
-#arrow-leftExplor{
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  left: 1%;
-  bottom: 41%;
-  cursor: pointer;
-  z-index: 1;
-  background-color: white;
-  border-color: #9aafb4 !important;
-  display: none !important;
-}
+
 #explor1{
   background-image: url(/images/dahab.jpg);
   background-size: cover;
