@@ -1,119 +1,178 @@
-*, ::after, ::before{
+*,
+::after,
+::before {
     box-sizing: border-box !important;
 }
-body{
+
+body {
     margin: 0px;
     padding: 0px;
-    
+
 }
-.container-fluid{
+
+.container-fluid {
     padding: 0px;
 }
 
-#bgBlue{
+#bgBlue {
     width: 100%;
     height: 7.8rem;
     background-color: #003B95;
 }
-#bgBlue .row{
+
+#bgBlue .row {
     margin: 0 6rem 0rem 6rem;
     /* background-color: aqua; */
 }
-#bgGray{
+
+#bgGray {
     width: 100%;
     height: 19rem;
     background-color: #F5F5F5;
 }
-#logoName{
+
+#logoName {
     margin-top: 1.4rem;
 }
-#logoName p{
+
+#logoName p {
     font-size: 1.5rem;
     padding: 0px;
 }
-#headItems{
+
+#headItems {
     margin-top: 1.4rem;
-    text-align: end; 
+    text-align: end;
 }
-#headItems button{
+
+#headItems button {
     background-color: #003B95;
     color: #F5F5F5;
     border: none;
-    height: 3rem ;
+    height: 3rem;
     width: 12%;
 }
-#headItems button:hover{
+
+#headItems button:hover {
     background-color: #1A4FA0;
-    
+
 }
-#currncy{
+
+#currncy {
     font-size: 1rem !important;
 }
-#headItems button img{
+
+#headItems button img {
     border-radius: 50%;
     width: 1.5rem;
 }
-#helpIcon{
+
+#helpIcon {
     font-size: 1.3rem !important;
 }
-#reg{
+
+#reg {
     background-color: white !important;
-    color:#1A4FA0 !important;
+    color: #1A4FA0 !important;
     height: 2rem !important;
     width: 13.5% !important;
     border-radius: 0.2rem;
     /* padding-bottom: 2rem !important; */
     margin-right: 0.3rem;
 }
-#reg:hover{
+
+#reg:hover {
     background-color: #F0F6FD !important;
 }
-#mainBtns{
+
+#mainBtns {
     margin-top: 0.2px !important;
     padding: 0px;
 }
-#mainBtns button{
+
+#mainBtns button {
     color: white;
-    font-size: 0.91rem ;
+    font-size: 0.91rem;
     height: 2.6rem;
     border-radius: 5rem;
+
 }
 
-#mainBtns button:hover{
+#mainBtns button:hover {
     background-color: #1A4FA0;
-    border-radius: 5rem;
 }
-#btnRow i{
+
+#mainBtns button:focus {
+    background-color: #1A4FA0;
+    border: 1px solid white;
+}
+
+#btnRow i {
     margin-right: 0.3rem;
 }
-#bgGray #centerRow{
+
+#bgGray #centerRow {
     margin: 0 6rem 0rem 6rem;
     /* background-color: aqua; */
     height: 19rem;
     align-content: center;
 }
-#bgGray #centerRow .row{
+
+#bgGray #centerRow .row {
     margin-left: 6rem;
 }
-#bgGray #centerRow .row h1{
+
+#bgGray #centerRow .row h1 {
     font-weight: bold;
     font-size: 2rem !important;
 }
-#bgGray #centerRow .row p{
+
+#bgGray #centerRow .row p {
     font-size: 1.25rem !important;
 }
+
+#searchBar {
+    border-collapse: collapse;
+}
+#search{
+    width: 100%;
+}
+#searchItem1 {
+    width: 35%;
+    border: 2px solid orange;
+    border-radius: 0.2rem;
+}
+#searchItem2 {
+    border: 2px solid orange;
+    border-radius: 0.2rem;
+    /* width: 35%; */
+}
+#searchItem2 button {
+    border-radius: 0.2rem;
+    background-color: blue;
+    color: white;
+}
+#searchItem2 button:hover{
+    background-color: #003B95;
+}
+#input1,#input2{
+    margin-right: 0px !important;
+    border-radius: 0px;
+}
+
 /* ----------------------------------------- */
 /* Body*/
-#conBody{
+#conBody {
     /* background-color: #F0F6FD; */
-    margin: 0 6rem 0rem 6rem;
+    margin: 0 6rem 10rem 6rem;
 }
-#conBody .col-12{
+
+#conBody .col-12 {
     padding-left: 0px;
     padding-right: 0px;
 }
 
-#check{
+#check {
     display: flex;
     margin: 3rem 0 3rem 0;
     padding: 1rem;
@@ -121,25 +180,29 @@ body{
     border-radius: 0.5rem;
 }
 
-.para{
+.para {
     margin-left: 1rem;
 }
-#check div p{
+
+#check div p {
     margin-bottom: 0px;
     padding-top: 0.5rem;
     font-size: 0.9rem;
 }
-#check a{
+
+#check a {
     padding-top: 0.5rem;
     font-size: 0.9rem;
 }
-#infoIcon i{
+
+#infoIcon i {
     font-size: 1.2rem;
     color: #A0541F;
 
 
 }
-#infoIcon{
+
+#infoIcon {
     display: flex;
     width: 2.5rem;
     height: 2.5rem;
@@ -149,17 +212,106 @@ body{
     border-radius: 0.3rem;
 
 }
-#check a{
+
+#check a {
     margin-left: 0.3rem;
 }
-#check a:link{
+
+#check a:link {
     text-decoration: none;
 }
-#check a:hover{
+
+#check a:hover {
     text-decoration: underline;
 }
+#narbyImg1{
+    display: flex;
+    background-image: url("https://q-xx.bstatic.com/xdata/images/city/533x300/633161.jpg?k=c43a05e52fa692f0aa5a6049dd674ab737f5af350972e47d2d66a3fd622908ab&o=");
+    width: 22rem;
+    height: 13rem;
+    max-width: 22rem;
+    max-height: 13rem;
+    border-radius: 4%;
+    align-items: end;
+    transition: transform .5s ease;
+}
+#narbyImg1:hover{
+    transform: scale(1.05);
+}
+#narbyImg2{
+    display: flex;
+    background-image: url("https://q-xx.bstatic.com/xdata/images/city/533x300/644383.jpg?k=5289a04ca888bf563a92b5d671e4fd63806b9bea65e8d9b3b3187403a897bf12&o=");
+    width: 22rem;
+    height: 13rem;
+    max-width: 22rem;
+    max-height: 13rem;
+    border-radius: 4%;
+    align-items: end;
+    transition: transform .5s ease;
+}
+#narbyImg2:hover{
+    transform: scale(1.05);
+}
+#narbyImg3{
+    display: flex;
+    background-image: url("https://q-xx.bstatic.com/xdata/images/city/533x300/644333.jpg?k=5ef264baf6fb50c13b119d4b378111f7072e30c42996c51ce7e76f2574e1d785&o=");
+    width: 22rem;
+    height: 13rem;
+    max-width: 22rem;
+    max-height: 13rem;
+    border-radius: 4%;
+    align-items: end;
+    transition: transform .5s ease;
+}
+#narbyImg3:hover{
+    transform: scale(1.05);
+}
+#narbyImg1 .col{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+#narbyImg2 .col{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+#narbyImg3 .col{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+#data1 h6{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+#data1 p{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+#data1 p{
+    font-size: 0.9rem;
+}
+#aswan:link{
+    text-decoration: none;
+}
 
-
-
-
-
+.signsection{
+    border: 1px solid gainsboro;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    
+}
+.signsection h6{
+    font-weight: bold;
+}
+.signsection p{
+    font-size: 0.9rem;
+}
+.signsection a:link{
+    text-decoration: none;
+}
+.advice{
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
