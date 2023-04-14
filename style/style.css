@@ -362,3 +362,50 @@ font-size: 12px;;
     cursor: pointer;
     width: 100%;
   }
+  #datePiker {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: black;;
+    }
+    .dropdown , button.btn.dropdown-toggle.w-100.show {
+      border: none !important;
+      outline: none !important;
+    }
+    .dropdown-menu {
+      width: 300px;
+      /* display: flex !important;; */
+      justify-content: space-around !important;
+      flex-direction: column !important;
+      align-items: center;
+      padding: 10px;
+      margin: 0;
+    }
+    .dropdown-menu li {
+      width: 50%!important;
+    }
+    .dropdown-menu span {
+      width: 40% !important;
+      border: 1px solid gray;
+      text-align: center;
+      padding: 1%;
+    }
+    .dropdown-menu span p {
+      font-weight: 700;
+      margin: 0 !important;
+    }
+    .dropdown-menu span .plusAdult , .plusChildren , .plusRooms {
+      color: rgb(64, 136, 230) !important;
+      background-color: rgb(255, 255, 255);
+      border: none !important;;
+      font-size: large;
+      cursor: pointer;
+    }
+    .dropdown-menu span .minusAdult , .minusChildren ,.minusRooms {
+      font-size: large;
+      color: gray !important;
+      background-color: rgb(255, 255, 255);
+      border: none !important;;
+      cursor: pointer;
+    }
