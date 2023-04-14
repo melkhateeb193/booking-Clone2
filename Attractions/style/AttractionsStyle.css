@@ -1,0 +1,463 @@
+*,
+::after,
+::before {
+    box-sizing: border-box !important;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+#bgBlue {
+    width: 100%;
+    height: 7.8rem;
+    background-color: #003B95;
+}
+
+#bgBlue .row {
+    margin: 0 6rem 0rem 6rem;
+    /* background-color: aqua; */
+}
+
+#bgGray {
+    width: 100%;
+    height: 19rem;
+    background-color: #F5F5F5;
+}
+
+#logoName {
+    margin-top: 1.4rem;
+}
+
+#logoName p {
+    font-size: 1.5rem;
+    padding: 0px;
+}
+
+#headItems {
+    margin-top: 1.4rem;
+    text-align: end;
+}
+
+#headItems button {
+    background-color: #003B95;
+    color: #F5F5F5;
+    border: none;
+    height: 3rem;
+    width: 12%;
+}
+
+#headItems button:hover {
+    background-color: #1A4FA0;
+
+}
+
+#currncy {
+    font-size: 1rem !important;
+}
+
+#headItems button img {
+    border-radius: 50%;
+    width: 1.5rem;
+}
+
+#helpIcon {
+    font-size: 1.3rem !important;
+}
+
+#reg {
+    background-color: white !important;
+    color: #1A4FA0 !important;
+    height: 2rem !important;
+    width: 13.5% !important;
+    border-radius: 0.2rem;
+    /* padding-bottom: 2rem !important; */
+    margin-right: 0.3rem;
+}
+
+#reg:hover {
+    background-color: #F0F6FD !important;
+}
+
+#mainBtns {
+    margin-top: 0.2px !important;
+    padding: 0px;
+}
+
+#mainBtns button {
+    color: white;
+    font-size: 0.91rem;
+    height: 2.6rem;
+    border-radius: 5rem;
+
+}
+
+#mainBtns button:hover {
+    background-color: #1A4FA0;
+}
+#btn4{
+    background-color: #1A4FA0;
+    border: 1px solid white;
+}
+#mainBtns button:focus {
+    background-color: #1A4FA0;
+    border: 1px solid white;
+}
+
+#btnRow i {
+    margin-right: 0.3rem;
+}
+
+#bgGray #centerRow {
+    margin: 0 6rem 0rem 6rem;
+    /* background-color: aqua; */
+    height: 19rem;
+    align-content: center;
+}
+
+#bgGray #centerRow .row {
+    margin-left: 6rem;
+}
+
+#bgGray #centerRow .row h1 {
+    font-weight: bold;
+    font-size: 2rem !important;
+}
+
+#bgGray #centerRow .row p {
+    font-size: 1.25rem !important;
+}
+
+#searchBar {
+    border-collapse: collapse;
+}
+#search{
+    width: 100%;
+}
+#searchItem1 {
+    width: 35%;
+    border: 2px solid orange;
+    border-radius: 0.2rem;
+}
+#searchItem2 {
+    border: 2px solid orange;
+    border-radius: 0.2rem;
+    /* width: 35%; */
+}
+#searchItem2 button {
+    border-radius: 0.2rem;
+    background-color: blue;
+    color: white;
+}
+#searchItem2 button:hover{
+    background-color: #003B95;
+}
+#input1,#input2{
+    margin-right: 0px !important;
+    border-radius: 0px;
+}
+
+/* ----------------------------------------- */
+/* Body*/
+#conBody {
+    /* background-color: #F0F6FD; */
+    margin: 0 6rem 2rem 6rem;
+}
+
+#conBody .col-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#check {
+    display: flex;
+    margin: 3rem 0 3rem 0;
+    padding: 1rem;
+    border: solid 1px #E7E7E7;
+    border-radius: 0.5rem;
+}
+
+.para {
+    margin-left: 1rem;
+}
+
+#check div p {
+    margin-bottom: 0px;
+    padding-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+#check a {
+    padding-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+#infoIcon i {
+    font-size: 1.2rem;
+    color: #A0541F;
+
+
+}
+
+#infoIcon {
+    display: flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #FEF3EC;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3rem;
+
+}
+
+#check a {
+    margin-left: 0.3rem;
+}
+
+#check a:link {
+    text-decoration: none;
+}
+
+#check a:hover {
+    text-decoration: underline;
+}
+#narbyImg1{
+    display: flex;
+    background-image: url("https://q-xx.bstatic.com/xdata/images/city/533x300/633161.jpg?k=c43a05e52fa692f0aa5a6049dd674ab737f5af350972e47d2d66a3fd622908ab&o=");
+    width: 22rem;
+    height: 13rem;
+    max-width: 22rem;
+    max-height: 13rem;
+    border-radius: 4%;
+    align-items: end;
+    transition: transform .5s ease;
+}
+#narbyImg1:hover{
+    transform: scale(1.05);
+}
+#narbyImg2{
+    display: flex;
+    background-image: url("https://q-xx.bstatic.com/xdata/images/city/533x300/644383.jpg?k=5289a04ca888bf563a92b5d671e4fd63806b9bea65e8d9b3b3187403a897bf12&o=");
+    width: 22rem;
+    height: 13rem;
+    max-width: 22rem;
+    max-height: 13rem;
+    border-radius: 4%;
+    align-items: end;
+    transition: transform .5s ease;
+}
+#narbyImg2:hover{
+    transform: scale(1.05);
+}
+#narbyImg3{
+    display: flex;
+    background-image: url("https://q-xx.bstatic.com/xdata/images/city/533x300/644333.jpg?k=5ef264baf6fb50c13b119d4b378111f7072e30c42996c51ce7e76f2574e1d785&o=");
+    width: 22rem;
+    height: 13rem;
+    max-width: 22rem;
+    max-height: 13rem;
+    border-radius: 4%;
+    align-items: end;
+    transition: transform .5s ease;
+}
+#narbyImg3:hover{
+    transform: scale(1.05);
+}
+#narbyImg1 .col{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+#narbyImg2 .col{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+#narbyImg3 .col{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+#data1 h6{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+#data1 p{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+#data1 p{
+    font-size: 0.9rem;
+}
+#aswan:link{
+    text-decoration: none;
+}
+
+.signsection{
+    border: 1px solid gainsboro;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    
+}
+.signsection h6{
+    font-weight: bold;
+}
+.signsection p{
+    font-size: 0.9rem;
+}
+.signsection a:link{
+    text-decoration: none;
+}
+.advice{
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.exploreList{
+    margin: 0px;
+    border-radius: 0px;
+    font-size: 0.9rem;
+}
+.exploreList:focus{
+    color: #006CE4;
+    border-bottom: 2px solid #006CE4;
+    border-radius: 0px;
+
+}
+.exploreList:hover{
+    background-color: #F2F2F2;
+}
+.collapse .card{
+    border: none;
+    padding: 0px;
+}
+#ExRow{
+    margin-bottom: 1.25rem;
+}
+#exploreCol a{
+    color: white;
+}
+#exploreCol a:link{
+   text-decoration: none;
+}
+#imgEx{
+  position: relative; 
+}
+#imgEx img{
+    width: 16rem;
+    height: 9rem;
+    border-radius: 5%;
+}
+
+#imgText{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem; 
+}
+#imgText p {
+    margin: 0px;
+    padding: 0px;
+}
+#blackcolor{
+    position: absolute;
+    top: 0;
+    background-image: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4));
+    width: 16rem;
+    height: 9rem;
+    border-radius: 5%;
+}
+
+#footer{
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 29rem;
+    
+}
+#footer .container{
+    padding: 2rem 6rem 0 6rem;
+}
+#footer p{
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    
+}
+#footer a{
+    color: black;
+}
+#footer a:link{
+    text-decoration: none;
+}
+#footer a:link:hover{
+    text-decoration: underline;
+}
+
+#footerItems {
+    margin-top: 1.4rem;
+}
+
+#footerItems button {
+    background-color: #F5F5F5;
+    color: black;
+    border: none;
+    height: 2.5rem;
+    width: 4%;
+    padding: 0px;
+}
+
+#footerItems button:hover {
+    background-color: #DFDFDF;
+
+}
+
+#currncy {
+    color: black;
+    font-size: 1rem !important;
+    padding: 0px;
+    font-weight: bold
+}
+
+#footerItems button img {
+    border-radius: 50%;
+    width: 1.5rem;
+}
+#footerBot{
+    text-align: center;
+}
+#footerBot p{
+    margin: 0px;
+    padding: 0px;
+    font-size: 0.75rem;
+}
+#footerBot div{
+    margin-top: 1.5rem;
+    margin-bottom: 1.4rem;
+}
+#footImg1 svg{
+    margin-right: 1.5rem;
+    width: 6rem;
+}
+#footImg2 svg{
+    margin-right: 1.5rem;
+    width: 4.5rem;
+}
+#footImg3 svg{
+    margin-right: 1.5rem;
+    width: 5rem;
+}
+#footImg4 svg{
+    margin-right: 1.5rem;
+    width: 2.5rem;
+}
+#footImg5 svg{
+    margin-right: 1.5rem;
+    width: 8rem;
+}
+#footImg6 svg{
+    margin-right: 1.5rem;
+    width: 4rem;
+}
