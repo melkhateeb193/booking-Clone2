@@ -101,7 +101,10 @@ body {
 #mainBtns button:hover {
     background-color: #1A4FA0;
 }
-
+#btn4{
+    background-color: #1A4FA0;
+    border: 1px solid white;
+}
 #mainBtns button:focus {
     background-color: #1A4FA0;
     border: 1px solid white;
@@ -164,7 +167,7 @@ body {
 /* Body*/
 #conBody {
     /* background-color: #F0F6FD; */
-    margin: 0 6rem 10rem 6rem;
+    margin: 0 6rem 2rem 6rem;
 }
 
 #conBody .col-12 {
@@ -314,4 +317,147 @@ body {
     margin-bottom: 0px;
     font-weight: bold;
     font-size: 0.9rem;
+}
+.exploreList{
+    margin: 0px;
+    border-radius: 0px;
+    font-size: 0.9rem;
+}
+.exploreList:focus{
+    color: #006CE4;
+    border-bottom: 2px solid #006CE4;
+    border-radius: 0px;
+
+}
+.exploreList:hover{
+    background-color: #F2F2F2;
+}
+.collapse .card{
+    border: none;
+    padding: 0px;
+}
+#ExRow{
+    margin-bottom: 1.25rem;
+}
+#exploreCol a{
+    color: white;
+}
+#exploreCol a:link{
+   text-decoration: none;
+}
+#imgEx{
+  position: relative; 
+}
+#imgEx img{
+    width: 16rem;
+    height: 9rem;
+    border-radius: 5%;
+}
+
+#imgText{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem; 
+}
+#imgText p {
+    margin: 0px;
+    padding: 0px;
+}
+#blackcolor{
+    position: absolute;
+    top: 0;
+    background-image: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4));
+    width: 16rem;
+    height: 9rem;
+    border-radius: 5%;
+}
+
+#footer{
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 29rem;
+    
+}
+#footer .container{
+    padding: 2rem 6rem 0 6rem;
+}
+#footer p{
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    
+}
+#footer a{
+    color: black;
+}
+#footer a:link{
+    text-decoration: none;
+}
+#footer a:link:hover{
+    text-decoration: underline;
+}
+
+#footerItems {
+    margin-top: 1.4rem;
+}
+
+#footerItems button {
+    background-color: #F5F5F5;
+    color: black;
+    border: none;
+    height: 2.5rem;
+    width: 4%;
+    padding: 0px;
+}
+
+#footerItems button:hover {
+    background-color: #DFDFDF;
+
+}
+
+#currncy {
+    color: black;
+    font-size: 1rem !important;
+    padding: 0px;
+    font-weight: bold
+}
+
+#footerItems button img {
+    border-radius: 50%;
+    width: 1.5rem;
+}
+#footerBot{
+    text-align: center;
+}
+#footerBot p{
+    margin: 0px;
+    padding: 0px;
+    font-size: 0.75rem;
+}
+#footerBot div{
+    margin-top: 1.5rem;
+    margin-bottom: 1.4rem;
+}
+#footImg1 svg{
+    margin-right: 1.5rem;
+    width: 6rem;
+}
+#footImg2 svg{
+    margin-right: 1.5rem;
+    width: 4.5rem;
+}
+#footImg3 svg{
+    margin-right: 1.5rem;
+    width: 5rem;
+}
+#footImg4 svg{
+    margin-right: 1.5rem;
+    width: 2.5rem;
+}
+#footImg5 svg{
+    margin-right: 1.5rem;
+    width: 8rem;
+}
+#footImg6 svg{
+    margin-right: 1.5rem;
+    width: 4rem;
 }
