@@ -414,6 +414,65 @@ font-size: 12px;;
 
     @media only screen and (min-width: 600px) {
       body {
-        
+
       }
     }
+
+
+    #container {
+      width: 100% !important;
+      margin: 0px;
+      /* background-color: antiquewhite !important; */
+  }
+  
+  #btnClose {
+      width: 100% !important;
+      background-color: transparent !important;
+      font-size: 0.8rem !important;
+  }
+  
+  #sugested {
+      font-size: 0.9rem !important;
+  }
+  
+  #btnc span {
+      display: block !important;
+      font-size: 0.85rem !important;
+      color: #717171;
+  }
+  
+  .btnElement {
+      margin-right: 1rem;
+  }
+  
+  .btnElement button {
+      width: 13rem !important;
+      height: 4.5rem !important;
+      /* background-color: blue;     */
+  }
+  
+  #btnc {
+      background-color: white;
+      border: none;
+  }
+  
+  #btnc:hover {
+      background-color: #F2F2F2 !important;
+      border: none;
+  }
+  
+  #btnc:focus {
+      background-color: #F0F6FD;
+      border: none;
+  }
+  
+  #btnc span:focus {
+      color: blue;
+  }
+  
+  #modalc {
+      text-align: left !important;
+  }
+  div#titelSelect , .sugestedP {
+    color: black !important;;
+  }

@@ -90,3 +90,36 @@ document.querySelector('.plusChildren').addEventListener('click', handleChildren
 document.querySelector('.minusChildren').addEventListener('click', handleChildrenChange);
 document.querySelector('.plusRooms').addEventListener('click', handleRoomsChange);
 document.querySelector('.minusRooms').addEventListener('click', handleRoomsChange);
+
+
+
+function SetCurrentStyle(element){
+  console.log("AAA");
+  element.addEventListener("focus",(event)=>{
+      console.log("BBB");
+      var btns = document.querySelectorAll("#btnc");
+      console.log(btns);
+      btns.forEach((els)=>{
+          els.style.backgroundColor = "";
+          els.childNodes.forEach((item)=>{
+              console.log(item.innerHTML);
+              item.style= "color: #717171";
+          })
+      });
+      // document.getElementsByTagName("button")
+      event.target.style.backgroundColor = "#F0F6FD";
+      element.childNodes.forEach(el => {
+          console.log(el);
+          el.style= "color: blue";
+      });
+  })
+}
+
+
+function ChangeCurrency(element){
+  console.log(element.lastChild);
+  var currency = element.lastChild.innerHTML;
+  console.log(currency);
+  document.getElementById("currncy1").innerHTML = currency;
+  SetCurrentStyle(element);
+}
