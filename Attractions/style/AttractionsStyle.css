@@ -10,6 +10,48 @@ body {
 
 }
 
+/* Currncy */
+#container{
+    width: 100% !important;
+    margin: 0px;
+    /* background-color: antiquewhite !important; */
+}
+#btnClose{
+    width: 100% !important;
+    background-color: transparent !important;
+    font-size: 0.8rem !important;
+}
+#sugested{
+    font-size: 0.9rem !important;
+}
+#btnc span{
+    display: block !important;
+    font-size: 0.85rem !important;
+    color: #717171 !important;
+}
+.btnElement{
+    margin-right:1rem ;
+}
+.btnElement button{
+    width: 13rem !important;
+    height: 4.5rem !important;
+    /* background-color: blue;     */
+}
+#btnc{
+    background-color: white !important;
+    border: none !important;
+}
+#btnc:hover{
+    background-color: #F2F2F2 !important;
+    border: none !important;
+}
+
+#modalc{
+    text-align: left !important;
+}
+
+
+
 .container-fluid {
     padding: 0px;
 }
@@ -58,8 +100,9 @@ body {
 
 }
 
-#currncy {
+#currncy1 {
     font-size: 1rem !important;
+    color: white;
 }
 
 #headItems button img {
