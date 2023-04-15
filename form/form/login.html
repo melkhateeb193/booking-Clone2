@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking.com</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="form.css">
     <script src="https://kit.fontawesome.com/5dbc8d9af2.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
-
     <div class="cotn_principal">
+        <a class="BookingLogo" href="/index.html"><h1>Booking</h1></a>
 
         <div class="cont_centrar">
             <ul style="list-style-type: none;">
@@ -26,6 +26,7 @@
                 <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
             </ul>
         </div>
+
         <div class="cont_centrar">
 
             <div class="cont_login">
@@ -35,11 +36,11 @@
                         <div class="cont_ba_opcitiy">
                             <h2>LOG IN</h2>
                             <p> Book in 150,000 destinations across the world. Save 10% with Genius.
-                                 Flight + Hotel. Great Choice. Villas. Motels. Hostels</p>
+                                Flight + Hotel. Great Choice. Villas. Motels. Hostels</p>
                             <button class="btn_login" onclick="change_to_login()">LOG IN</button>
                         </div>
                     </div>
-                    <div class="col_md_sign_up">
+                    <!-- <div class="col_md_sign_up">
                         <div class="cont_ba_opcitiy">
                             <h2>SIGN UP</h2>
 
@@ -49,16 +50,16 @@
 
                             <button class="btn_sign_up" onclick="change_to_sign_up()">SIGN UP</button>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
-
+<!-- 
                 <div class="cont_back_info">
                     <div class="cont_img_back_grey">
                         <img src="./imges/download.jpg" alt="" />
                     </div>
 
-                </div>
+                </div> -->
                 <div class="cont_forms">
                     <div class="cont_img_back_">
                         <img src="./imges/vacan.jpg" alt="" />
@@ -67,13 +68,14 @@
                         <div class="cont_form_login">
                             <a href="#" onclick="hidden_login_and_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
                             <h2>LOG IN</h2>
-                            <input type="email" placeholder="Example123@gmail.com" required pattern ="^[A-Za-z]{,3}[@][a-z]{3,}(.com|.net|.edu|.org)(.eg)$"/>
-                            <input type="password" placeholder="Password" required pattern="[0-9]{9,}"  />
+                            <input type="email" id="usernameInput" placeholder="Example123@gmail.com" required
+                                pattern="^[A-Za-z]{,3}[@][a-z]{3,}(.com|.net|.edu|.org)(.eg)$" />
+                            <input type="password" id="passwordInput" placeholder="Password" required pattern="[0-9]{9,}" />
                             <input type="submit" class="btn_login" onclick="change_to_login()" value="LOG IN"
                                 style="color: beige;">
                         </div>
                     </form>
-
+                    
                     <form action="">
                         <div class="cont_form_sign_up">
                             <a href="#" onclick="hidden_login_and_sign_up()"><i class="material-icons">&#xE5C4;</i></a>

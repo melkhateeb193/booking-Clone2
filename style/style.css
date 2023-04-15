@@ -362,6 +362,7 @@ font-size: 12px;;
     cursor: pointer;
     width: 100%;
   }
+  
   #datePiker {
     flex-grow: 1;
     border: none;
