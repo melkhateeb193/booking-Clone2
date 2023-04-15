@@ -26,7 +26,7 @@
                             </a>
                         </div>
                         <div class="col" id="headItems">
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#currncyModal">
+                            <button type="button" class="btn" onclick="SetCurrent()" data-bs-toggle="modal" data-bs-target="#currncyModal">
                                 <p class="badge m-0" id="currncy1">EGP</p>
                             </button>
                             <!-- Modal -->
@@ -42,13 +42,13 @@
                                                             <h2 class="fs-5 fw-bold">Select your currency</h2>
                                                         </div>
                                                         <div class="col-1 text-end mt-4 p-0" >
-                                                            <button id="btnClose" type="button" class="btn-close fs-6" aria-label="Close"></button>
+                                                            <button id="btnClose" type="button" class="btn-close fs-6" data-bs-dismiss="modal" aria-label="Close"></button>
                                                         </div>
                                                     </div>
                                                     <div id="sugested" class="row mt-2 fw-bold ">
                                                         <p>Suggested for you</p>
                                                     </div>
-                                                    <div class="row">
+                                                    <div class="row" class="btnCurrency">
                                                         <div class="col-3">
                                                             <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
                                                                         class="text-start">U.S. Dollar</span><span class="text-start">USD</span></button></div>
@@ -71,7 +71,9 @@
                                                     <div style="margin-top: 1rem;"></div>
                                                     <div class="row">
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
+                                                            <div class="btnElement"><button id="btnc" 
+                                                                onclick="ChangeCurrency(this)" type="button" 
+                                                                class="btn pt-2 pb-3"><span
                                                                         class="text-start">Saudi Arabian Riyal</span><span
                                                                         class="text-start">SAR</span></button></div>
                                                         </div>
@@ -409,7 +411,7 @@
                     <div class="row  align-items-center" id="btnRow">
                         <div class="col" id="mainBtns">
                             <button type="button" class="btn" id="btn1">
-                              <a href="/index.html">  <p style="display: inline;">Stays</p></a>
+                              <a href="/index.html"><p style="display: inline;">Stays</p></a>
                             </button>
                             <button type="button" class="btn" id="btn2">
                                 <p style="display: inline;">Flights</p>

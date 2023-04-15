@@ -27,7 +27,7 @@ body {
 #btnc span{
     display: block !important;
     font-size: 0.85rem !important;
-    color: #717171 !important;
+    color: #717171;
 }
 .btnElement{
     margin-right:1rem ;
@@ -38,12 +38,12 @@ body {
     /* background-color: blue;     */
 }
 #btnc{
-    background-color: white !important;
-    border: none !important;
+    background-color: white;
+    border: none;
 }
 #btnc:hover{
     background-color: #F2F2F2 !important;
-    border: none !important;
+    border: none;
 }
 
 #modalc{
@@ -88,7 +88,7 @@ body {
 }
 
 #headItems button {
-    background-color: #003B95;
+    /* background-color: #003B95; */
     color: #F5F5F5;
     border: none;
     height: 3rem;
@@ -112,6 +112,14 @@ body {
 
 #helpIcon {
     font-size: 1.3rem !important;
+}
+#btn1 a{
+    color: white;
+}
+#btn1 a:link{
+    text-decoration: none;
+    
+
 }
 
 #reg {
