@@ -230,10 +230,8 @@ body {
 #narbyImg1{
     display: flex;
     background-image: url("https://q-xx.bstatic.com/xdata/images/city/533x300/633161.jpg?k=c43a05e52fa692f0aa5a6049dd674ab737f5af350972e47d2d66a3fd622908ab&o=");
-    width: 22rem;
+    width: 100%;
     height: 13rem;
-    max-width: 22rem;
-    max-height: 13rem;
     border-radius: 4%;
     align-items: end;
     transition: transform .5s ease;
@@ -244,10 +242,8 @@ body {
 #narbyImg2{
     display: flex;
     background-image: url("https://q-xx.bstatic.com/xdata/images/city/533x300/644383.jpg?k=5289a04ca888bf563a92b5d671e4fd63806b9bea65e8d9b3b3187403a897bf12&o=");
-    width: 22rem;
+    width: 100%;
     height: 13rem;
-    max-width: 22rem;
-    max-height: 13rem;
     border-radius: 4%;
     align-items: end;
     transition: transform .5s ease;
@@ -258,10 +254,8 @@ body {
 #narbyImg3{
     display: flex;
     background-image: url("https://q-xx.bstatic.com/xdata/images/city/533x300/644333.jpg?k=5ef264baf6fb50c13b119d4b378111f7072e30c42996c51ce7e76f2574e1d785&o=");
-    width: 22rem;
+    width: 100%;
     height: 13rem;
-    max-width: 22rem;
-    max-height: 13rem;
     border-radius: 4%;
     align-items: end;
     transition: transform .5s ease;
