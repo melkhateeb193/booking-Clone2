@@ -125,29 +125,36 @@ i.fa-solid.fa-question {
   align-items: center;
 }
 
-i {
+i.fa-solid.fa-question {
   border: 1px solid white;
   border-radius: 50%;
   width: 24px;
   height: 24px;
 }
-
+.headerListItems {
+  cursor: pointer !important;;
+}
+.headerListItems:hover {
+  background-color: #6d6767;
+  border: none ;
+}
 #searchBar {
-  border-collapse: collapse;
+  border: 3px solid orange ;
+  background-color: white;
+  position: absolute;
+  bottom: 17%;
+  right: 5%;
+  width: 90%;
 }
-#searchItem1 {
-  width: 35%;
-  border: 2px solid orange ;
+.headerSearchInput {
+  border: none;
+  outline: none;
 }
-#searchItem2 {
-  width: 35%;
-  border: 2px solid orange ;
+.SearchTxt {
+color: lightgray;
+cursor: pointer;
+}
 
-}
-#searchItem3 {
-  border: 2px solid orange ;
-  width: 35%;
-}
 #warning {
   border: 1px solid rgb(222, 213, 213) ;
   width: 100%;
@@ -175,8 +182,8 @@ position: relative;
   position: absolute;
   width: 30px;
   height: 30px;
-  right: 7%;
-  bottom: -3.6%;
+  right: 3%;
+  bottom: -24%;
   cursor: pointer;
   z-index: 1;
   background-color: white;
@@ -287,3 +294,118 @@ cursor: pointer;
 color: rgb(72, 72, 190);
 font-size: 12px;;
 }
+
+  /* Style for the search item container */
+  #searchItem1 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    width: 300px;
+  }
+
+  /* Style for the search input field */
+  .headerSearchInput {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+
+  /* Style for the search button */
+  #searchButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  /* Style for the people nearby div */
+  #peopleNearbyDiv {
+    display: none;
+    margin-top: 16px;
+    padding: 16px;
+    background-color: white;
+    border-radius: 4px;
+    width: 400px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* Style for the people nearby div title */
+  #peopleNearbyDiv h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  /* Style for the people nearby div list */
+  #peopleNearbyDiv ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+ }
+
+  /* Style for the people nearby div list items */
+  #peopleNearbyDiv li {
+    margin-bottom: 8px;
+    border: 1px solid rgb(246, 238, 238);
+    padding: 20px;
+    cursor: pointer;
+    width: 100%;
+  }
+  #datePiker {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: black;;
+    }
+    .dropdown , button.btn.dropdown-toggle.w-100.show {
+      border: none !important;
+      outline: none !important;
+    }
+    .dropdown-menu {
+      width: 300px;
+      /* display: flex !important;; */
+      justify-content: space-around !important;
+      flex-direction: column !important;
+      align-items: center;
+      padding: 10px;
+      margin: 0;
+    }
+    .dropdown-menu li {
+      width: 50%!important;
+    }
+    .dropdown-menu span {
+      width: 40% !important;
+      border: 1px solid gray;
+      text-align: center;
+      padding: 1%;
+    }
+    .dropdown-menu span p {
+      font-weight: 700;
+      margin: 0 !important;
+    }
+    .dropdown-menu span .plusAdult , .plusChildren , .plusRooms {
+      color: rgb(64, 136, 230) !important;
+      background-color: rgb(255, 255, 255);
+      border: none !important;;
+      font-size: large;
+      cursor: pointer;
+    }
+    .dropdown-menu span .minusAdult , .minusChildren ,.minusRooms {
+      font-size: large;
+      color: gray !important;
+      background-color: rgb(255, 255, 255);
+      border: none !important;;
+      cursor: pointer;
+    }
