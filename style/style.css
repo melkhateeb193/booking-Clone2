@@ -142,7 +142,7 @@ i.fa-solid.fa-question {
   border: 3px solid orange ;
   background-color: white;
   position: absolute;
-  bottom: 17%;
+  bottom: 35%;
   right: 5%;
   width: 90%;
 }
@@ -182,8 +182,8 @@ position: relative;
   position: absolute;
   width: 30px;
   height: 30px;
-  right: 3%;
-  bottom: -24%;
+  right: 9%;
+  bottom: 1%;
   cursor: pointer;
   z-index: 1;
   background-color: white;
@@ -198,12 +198,12 @@ position: relative;
   position: absolute;
   width: 30px;
   height: 30px;
-  left: 7%;
-  bottom: -3.6%;
+  left: 9%;
+  bottom: 1%;
   cursor: pointer;
   z-index: 1;
   background-color: white;
-  display: none !important;
+  /* display: none !important; */
   justify-content: center;
   align-items: center;
   transition: opacity 0.3s ease;
@@ -303,7 +303,8 @@ font-size: 12px;;
     padding: 8px;
     background-color: #f0f0f0;
     border-radius: 4px;
-    width: 300px;
+    width: 400px;
+    height: fit-content;
   }
 
   /* Style for the search input field */
@@ -409,4 +410,10 @@ font-size: 12px;;
       background-color: rgb(255, 255, 255);
       border: none !important;;
       cursor: pointer;
+    }
+
+    @media only screen and (min-width: 600px) {
+      body {
+        
+      }
     }
