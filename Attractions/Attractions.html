@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../bootstrap-icons-1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./style/AttractionsStyle.css">
+    <!-- <link rel="stylesheet" href="../style/style.css"> -->
 
 </head>
 
@@ -26,7 +27,7 @@
                             </a>
                         </div>
                         <div class="col" id="headItems">
-                            <button type="button" class="btn" onclick="SetCurrent()" data-bs-toggle="modal" data-bs-target="#currncyModal">
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#currncyModal">
                                 <p class="badge m-0" id="currncy1">EGP</p>
                             </button>
                             <!-- Modal -->
@@ -41,8 +42,9 @@
                                                         <div id="titelSelect" class="col-11 mt-4">
                                                             <h2 class="fs-5 fw-bold">Select your currency</h2>
                                                         </div>
-                                                        <div class="col-1 text-end mt-4 p-0" >
-                                                            <button id="btnClose" type="button" class="btn-close fs-6" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        <div class="col-1 text-end mt-4 p-0">
+                                                            <button id="btnClose" type="button" class="btn-close fs-6"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
                                                         </div>
                                                     </div>
                                                     <div id="sugested" class="row mt-2 fw-bold ">
@@ -50,36 +52,58 @@
                                                     </div>
                                                     <div class="row" class="btnCurrency">
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">U.S. Dollar</span><span class="text-start">USD</span></button></div>
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span class="text-start">U.S.
+                                                                        Dollar</span><span
+                                                                        class="text-start">USD</span></button></div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">Euro</span><span class="text-start">EUR</span></button></div>
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span
+                                                                        class="text-start">Euro</span><span
+                                                                        class="text-start">EUR</span></button></div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">Pound Sterling</span><span class="text-start">GBP</span></button>
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span class="text-start">Pound
+                                                                        Sterling</span><span
+                                                                        class="text-start">GBP</span></button>
                                                             </div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn  pt-2 pb-3"><span
-                                                                        class="text-start">United Arab Emirates</span><span
-                                                                        class="text-start">Dirham</span><span class="text-start">AED</span></button></div>
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn  pt-2 pb-3"><span
+                                                                        class="text-start">United Arab
+                                                                        Emirates</span><span
+                                                                        class="text-start">Dirham</span><span
+                                                                        class="text-start">AED</span></button></div>
                                                         </div>
                                                     </div>
                                                     <div style="margin-top: 1rem;"></div>
                                                     <div class="row">
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" 
-                                                                onclick="ChangeCurrency(this)" type="button" 
-                                                                class="btn pt-2 pb-3"><span
-                                                                        class="text-start">Saudi Arabian Riyal</span><span
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span class="text-start">Saudi
+                                                                        Arabian Riyal</span><span
                                                                         class="text-start">SAR</span></button></div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">Australian Dollar</span><span class="text-start">AUD</span></button>
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span
+                                                                        class="text-start">Australian Dollar</span><span
+                                                                        class="text-start">AUD</span></button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -89,227 +113,378 @@
                                                     <div class="row">
                                                         <div class="col-3">
                                                             <div class="btnElement">
-                                                                <button id="btnc" type="button" class="btn pt-2 pb-3">
-                                                                    <span class="text-start">Egyptian Pound</span><span class="text-start">EGP</span></button>
+                                                                <button id="btnc" onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3">
+                                                                    <span class="text-start defultC">Egyptian
+                                                                        Pound</span><span
+                                                                        class="text-start">EGP</span></button>
                                                             </div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">Property's Currency</span><span
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span
+                                                                        class="text-start">Property's
+                                                                        Currency</span><span
                                                                         class="text-start">€$£</span></button></div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">Argentine Peso</span><span class="text-start">ARS</span></button>
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span
+                                                                        class="text-start">Argentine Peso</span><span
+                                                                        class="text-start">ARS</span></button>
                                                             </div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn  pt-2 pb-3"><span
-                                                                        class="text-start">Australian Doller</span><span class="text-start">AUD</span></button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mt-4">
-                                                        <div class="col-3">
-                                                            <div class="btnElement">
-                                                                <button id="btnc" type="button" class="btn pt-2 pb-3">
-                                                                    <span class="text-start">Azerbaijani</span><span class="text-start">AZN</span></button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">Bahraini</span><span class="text-start">BHD</span></button></div>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">Brazilian Real</span><span class="text-start">BRL</span></button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn  pt-2 pb-3"><span
-                                                                        class="text-start">Bulgarian Lev</span><span class="text-start">BGN</span></button>
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn  pt-2 pb-3"><span
+                                                                        class="text-start">Australian Doller</span><span
+                                                                        class="text-start">AUD</span></button>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="row mt-4">
                                                         <div class="col-3">
                                                             <div class="btnElement">
-                                                                <button id="btnc" type="button" class="btn pt-2 pb-3">
-                                                                    <span class="text-start">Canadian Doller</span><span class="text-start">CAD</span></button>
+                                                                <button id="btnc" onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3">
+                                                                    <span class="text-start">Azerbaijani</span><span
+                                                                        class="text-start">AZN</span></button>
                                                             </div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">Chilean Peso</span><span class="text-start">CLP</span></button></div>
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span
+                                                                        class="text-start">Bahraini</span><span
+                                                                        class="text-start">BHD</span></button></div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">Chinese Yuan</span><span class="text-start">CNY</span></button>
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span
+                                                                        class="text-start">Brazilian Real</span><span
+                                                                        class="text-start">BRL</span></button>
                                                             </div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn  pt-2 pb-3"><span
-                                                                        class="text-start">Colombian Peso</span><span class="text-start">COP</span></button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mt-4">
-                                                        <div class="col-3">
-                                                            <div class="btnElement">
-                                                                <button id="btnc" type="button" class="btn pt-2 pb-3">
-                                                                    <span class="text-start">Czech Koruna</span><span class="text-start">CZK</span></button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">Danish Krone</span><span class="text-start">DKK</span></button></div>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">Euro</span><span class="text-start">EUR</span></button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn  pt-2 pb-3"><span
-                                                                        class="text-start">Fijian Doller</span><span class="text-start">FJD</span></button>
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn  pt-2 pb-3"><span
+                                                                        class="text-start">Bulgarian Lev</span><span
+                                                                        class="text-start">BGN</span></button>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="row mt-4">
                                                         <div class="col-3">
                                                             <div class="btnElement">
-                                                                <button id="btnc" type="button" class="btn pt-2 pb-3">
-                                                                    <span class="text-start">Georgian Lari</span><span class="text-start">GEL</span></button>
+                                                                <button id="btnc" onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3">
+                                                                    <span class="text-start">Canadian Doller</span><span
+                                                                        class="text-start">CAD</span></button>
                                                             </div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">Hong Kong Doller</span><span class="text-start">HKD</span></button>
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span
+                                                                        class="text-start">Chilean Peso</span><span
+                                                                        class="text-start">CLP</span></button></div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span
+                                                                        class="text-start">Chinese Yuan</span><span
+                                                                        class="text-start">CNY</span></button>
                                                             </div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">Hungarian Forint</span><span class="text-start">HUF</span></button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn  pt-2 pb-3"><span
-                                                                        class="text-start">Indian Rupee</span><span class="text-start">INR</span></button>
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn  pt-2 pb-3"><span
+                                                                        class="text-start">Colombian Peso</span><span
+                                                                        class="text-start">COP</span></button>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="row mt-4">
                                                         <div class="col-3">
                                                             <div class="btnElement">
-                                                                <button id="btnc" type="button" class="btn pt-2 pb-3">
-                                                                    <span class="text-start">Indonesian Rupiah</span><span
+                                                                <button id="btnc" onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3">
+                                                                    <span class="text-start">Czech Koruna</span><span
+                                                                        class="text-start">CZK</span></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span
+                                                                        class="text-start">Danish Krone</span><span
+                                                                        class="text-start">DKK</span></button></div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span
+                                                                        class="text-start">Euro</span><span
+                                                                        class="text-start">EUR</span></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn  pt-2 pb-3"><span
+                                                                        class="text-start">Fijian Doller</span><span
+                                                                        class="text-start">FJD</span></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-4">
+                                                        <div class="col-3">
+                                                            <div class="btnElement">
+                                                                <button id="btnc" onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3">
+                                                                    <span class="text-start">Georgian Lari</span><span
+                                                                        class="text-start">GEL</span></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span class="text-start">Hong
+                                                                        Kong Doller</span><span
+                                                                        class="text-start">HKD</span></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span
+                                                                        class="text-start">Hungarian Forint</span><span
+                                                                        class="text-start">HUF</span></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn  pt-2 pb-3"><span
+                                                                        class="text-start">Indian Rupee</span><span
+                                                                        class="text-start">INR</span></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-4">
+                                                        <div class="col-3">
+                                                            <div class="btnElement">
+                                                                <button id="btnc" onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3">
+                                                                    <span class="text-start">Indonesian
+                                                                        Rupiah</span><span
                                                                         class="text-start">IDR</span></button>
                                                             </div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">Israeli New Shekel</span><span class="text-start">ILS</span></button>
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span
+                                                                        class="text-start">Palestine</span><span
+                                                                        class="text-start">£P</span></button>
                                                             </div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">Japanese Yen</span><span class="text-start">JPY</span></button>
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span
+                                                                        class="text-start">Japanese Yen</span><span
+                                                                        class="text-start">JPY</span></button>
                                                             </div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn  pt-2 pb-3"><span
-                                                                        class="text-start">Jordanian Dinar</span><span class="text-start">JOD</span></button>
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn  pt-2 pb-3"><span
+                                                                        class="text-start">Jordanian Dinar</span><span
+                                                                        class="text-start">JOD</span></button>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="row mt-4">
                                                         <div class="col-3">
                                                             <div class="btnElement">
-                                                                <button id="btnc" type="button" class="btn pt-2 pb-3">
-                                                                    <span class="text-start">Kazakhstani Tange</span><span
+                                                                <button id="btnc" onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3">
+                                                                    <span class="text-start">Kazakhstani
+                                                                        Tange</span><span
                                                                         class="text-start">KZT</span></button>
                                                             </div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">Kuwaiti Dinar</span><span class="text-start">KWD</span></button>
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span
+                                                                        class="text-start">Kuwaiti Dinar</span><span
+                                                                        class="text-start">KWD</span></button>
                                                             </div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">Malaysian Ringgit</span><span class="text-start">MYR</span></button>
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span
+                                                                        class="text-start">Malaysian Ringgit</span><span
+                                                                        class="text-start">MYR</span></button>
                                                             </div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn  pt-2 pb-3"><span
-                                                                        class="text-start">Mexican Peso</span><span class="text-start">MXN</span></button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mt-4">
-                                                        <div class="col-3">
-                                                            <div class="btnElement">
-                                                                <button id="btnc" type="button" class="btn pt-2 pb-3">
-                                                                    <span class="text-start">Moldovan Leu</span><span class="text-start">MDL</span></button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">Namibian Dollar</span><span class="text-start">NAD</span></button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">New Taiwan Dollar</span><span class="text-start">TWD</span></button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn  pt-2 pb-3"><span
-                                                                        class="text-start">New Zealand Dollar</span><span class="text-start">NZD</span></button>
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn  pt-2 pb-3"><span
+                                                                        class="text-start">Mexican Peso</span><span
+                                                                        class="text-start">MXN</span></button>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="row mt-4">
                                                         <div class="col-3">
                                                             <div class="btnElement">
-                                                                <button id="btnc" type="button" class="btn pt-2 pb-3">
-                                                                    <span class="text-start">Norwegian Krone</span><span class="text-start">NOK</span></button>
+                                                                <button id="btnc" onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3">
+                                                                    <span class="text-start">Moldovan Leu</span><span
+                                                                        class="text-start">MDL</span></button>
                                                             </div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">Omani Rial</span><span class="text-start">OMR</span></button></div>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">Polish Zloty</span><span class="text-start">PLN</span></button>
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span
+                                                                        class="text-start">Namibian Dollar</span><span
+                                                                        class="text-start">NAD</span></button>
                                                             </div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn  pt-2 pb-3"><span
-                                                                        class="text-start">Pound Sterling</span><span class="text-start">GBP</span></button>
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span class="text-start">New
+                                                                        Taiwan Dollar</span><span
+                                                                        class="text-start">TWD</span></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn  pt-2 pb-3"><span class="text-start">New
+                                                                        Zealand Dollar</span><span
+                                                                        class="text-start">NZD</span></button>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="row mt-4">
                                                         <div class="col-3">
                                                             <div class="btnElement">
-                                                                <button id="btnc" type="button" class="btn pt-2 pb-3">
-                                                                    <span class="text-start">Qatari Riyal</span><span class="text-start">QAR</span></button>
+                                                                <button id="btnc" onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3">
+                                                                    <span class="text-start">Norwegian Krone</span><span
+                                                                        class="text-start">NOK</span></button>
                                                             </div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">Romanian Leu</span><span class="text-start">RON</span></button></div>
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span class="text-start">Omani
+                                                                        Rial</span><span
+                                                                        class="text-start">OMR</span></button></div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">Russian Ruble</span><span class="text-start">RUB</span></button>
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span
+                                                                        class="text-start">Polish Zloty</span><span
+                                                                        class="text-start">PLN</span></button>
                                                             </div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn  pt-2 pb-3"><span
-                                                                        class="text-start">Saudi Arabian Riyal</span><span
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn  pt-2 pb-3"><span
+                                                                        class="text-start">Pound Sterling</span><span
+                                                                        class="text-start">GBP</span></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-4">
+                                                        <div class="col-3">
+                                                            <div class="btnElement">
+                                                                <button id="btnc" onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3">
+                                                                    <span class="text-start">Qatari Riyal</span><span
+                                                                        class="text-start">QAR</span></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span
+                                                                        class="text-start">Romanian Leu</span><span
+                                                                        class="text-start">RON</span></button></div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span
+                                                                        class="text-start">Russian Ruble</span><span
+                                                                        class="text-start">RUB</span></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn  pt-2 pb-3"><span
+                                                                        class="text-start">Saudi Arabian
+                                                                        Riyal</span><span
                                                                         class="text-start">SAR</span></button>
                                                             </div>
                                                         </div>
@@ -317,77 +492,118 @@
                                                     <div class="row mt-4">
                                                         <div class="col-3">
                                                             <div class="btnElement">
-                                                                <button id="btnc" type="button" class="btn pt-2 pb-3">
-                                                                    <span class="text-start">Singaporean Dollar</span><span
+                                                                <button id="btnc" onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3">
+                                                                    <span class="text-start">Singaporean
+                                                                        Dollar</span><span
                                                                         class="text-start">SGD</span></button>
                                                             </div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">South African Rand</span><span class="text-start">ZAR</span></button>
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span class="text-start">South
+                                                                        African Rand</span><span
+                                                                        class="text-start">ZAR</span></button>
                                                             </div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">South Korean Won</span><span class="text-start">KRW</span></button>
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span class="text-start">South
+                                                                        Korean Won</span><span
+                                                                        class="text-start">KRW</span></button>
                                                             </div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn  pt-2 pb-3"><span
-                                                                        class="text-start">Swedish Krona</span><span class="text-start">SEK</span></button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mt-4">
-                                                        <div class="col-3">
-                                                            <div class="btnElement">
-                                                                <button id="btnc" type="button" class="btn pt-2 pb-3">
-                                                                    <span class="text-start">Swiss Franc</span><span class="text-start">CHF</span></button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">Thai Baht</span><span class="text-start">THB</span></button></div>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">Turkish Lira</span><span class="text-start">TRY</span></button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn  pt-2 pb-3"><span
-                                                                        class="text-start">U.S Dollar</span><span class="text-start">USD</span></button>
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn  pt-2 pb-3"><span
+                                                                        class="text-start">Swedish Krona</span><span
+                                                                        class="text-start">SEK</span></button>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="row mt-4">
                                                         <div class="col-3">
                                                             <div class="btnElement">
-                                                                <button id="btnc" type="button" class="btn pt-2 pb-3">
-                                                                    <span class="text-start">Ukrainian Hryvnia</span><span
+                                                                <button id="btnc" onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3">
+                                                                    <span class="text-start">Swiss Franc</span><span
+                                                                        class="text-start">CHF</span></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span class="text-start">Thai
+                                                                        Baht</span><span
+                                                                        class="text-start">THB</span></button></div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span
+                                                                        class="text-start">Turkish Lira</span><span
+                                                                        class="text-start">TRY</span></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn  pt-2 pb-3"><span class="text-start">U.S
+                                                                        Dollar</span><span
+                                                                        class="text-start">USD</span></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-4">
+                                                        <div class="col-3">
+                                                            <div class="btnElement">
+                                                                <button id="btnc" onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3">
+                                                                    <span class="text-start">Ukrainian
+                                                                        Hryvnia</span><span
                                                                         class="text-start">UAH</span></button>
                                                             </div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">United Arab Emirates</span><span
-                                                                        class="text-start">Dirham</span><span class="text-start">AED</span></button></div>
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span
+                                                                        class="text-start">United Arab
+                                                                        Emirates</span><span
+                                                                        class="text-start">Dirham</span><span
+                                                                        class="text-start">AED</span></button></div>
                                                         </div>
                                                         <div class="col-3">
-                                                            <div class="btnElement"><button id="btnc" type="button" class="btn pt-2 pb-3"><span
-                                                                        class="text-start">West African CFA Franc</span><span
+                                                            <div class="btnElement"><button id="btnc"
+                                                                    onclick="ChangeCurrency(this)"
+                                                                    data-bs-dismiss="modal" type="button"
+                                                                    class="btn pt-2 pb-3"><span class="text-start">West
+                                                                        African CFA Franc</span><span
                                                                         class="text-start">XOF</span></button>
                                                             </div>
                                                         </div>
                                                     </div>
-                                        
-                                        
-                                        
-                                        
+
+
+
+
                                                 </div>
-                                        
-                                        
-                                            </div>  
+
+
+                                            </div>
 
 
 
@@ -411,7 +627,9 @@
                     <div class="row  align-items-center" id="btnRow">
                         <div class="col" id="mainBtns">
                             <button type="button" class="btn" id="btn1">
-                              <a href="/index.html"><p style="display: inline;">Stays</p></a>
+                                <a href="/index.html">
+                                    <p style="display: inline;">Stays</p>
+                                </a>
                             </button>
                             <button type="button" class="btn" id="btn2">
                                 <p style="display: inline;">Flights</p>
@@ -445,23 +663,21 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col">
-                                    <div id="searchBar" class="d-flex">
-                                        <div id="searchItem1">
-                                            <form class="d-flex" role="search">
-                                                <input id="input1" class="form-control me-2" type="search"
-                                                    placeholder="Search" aria-label="Search">
-                                                <input id="input2" class="form-control me-2" type="search"
-                                                    placeholder="Search" aria-label="Search">
-                                            </form>
-                                        </div>
-                                        <div id="searchItem2">
-                                            <form class="d-flex" role="search">
-                                                <button class="btn btn-outline-success" type="submit">Search</button>
-                                            </form>
-                                        </div>
-                                    </div>
+                            <!-- SearchBar -->
+                            <div id="searchBar" class="d-flex align-items-center p-1 rounded-1">
+                                <div id="searchItem1">
+                                    <i class="fa-solid fa-bed"></i>
+                                    <input type="text" placeholder="where are you going?" class="headerSearchInput">
+                                </div>
+                                <div id="searchItem1">
+                                    <form>
+                                        <i class="fa-regular fa-calendar"></i>
+                                        <input class="SearchTxt" id="datePiker" action="form-control"
+                                            type="datatime-local" placeholder="select DateTime">
+                                    </form>
+                                </div>
+                                <div id="searchItem1 w-100">
+                                    <button class="btn btn-primary w-100"> Search</button>
                                 </div>
                             </div>
                         </div>
@@ -1220,6 +1436,7 @@
 
     <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
     <script src="./script/AttractionsScript.js"></script>
+    <script src="../script.JS"></script>
 </body>
 
 </html>
