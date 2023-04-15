@@ -137,8 +137,34 @@ body {
 
 #btn1 a:link {
     text-decoration: none;
+}
+#btn4 a {
+    color: white;
+}
 
+#btn4 a:link {
+    text-decoration: none;
+}
+#btn2 a {
+    color: white;
+}
 
+#btn2 a:link {
+    text-decoration: none;
+}
+#btn3 a {
+    color: white;
+}
+
+#btn3 a:link {
+    text-decoration: none;
+}
+#btn5 a {
+    color: white;
+}
+
+#btn5 a:link {
+    text-decoration: none;
 }
 
 #reg {

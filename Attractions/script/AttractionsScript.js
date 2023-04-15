@@ -41,3 +41,7 @@ function ChangeCurrency(element){
 }
 
 
+// Search Bar
+
+
+
