@@ -13,8 +13,8 @@
 
 <body>
 
-
     <div class="cotn_principal">
+        <a class="BookingLogo" href="/index.html"><h1>Booking</h1></a>
 
         <div class="cont_centrar">
             <ul style="list-style-type: none;">
@@ -26,6 +26,7 @@
                 <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
             </ul>
         </div>
+
         <div class="cont_centrar">
 
             <div class="cont_login">
@@ -67,13 +68,14 @@
                         <div class="cont_form_login">
                             <a href="#" onclick="hidden_login_and_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
                             <h2>LOG IN</h2>
-                            <input type="email" placeholder="Example123@gmail.com" required pattern ="^[A-Za-z]{,3}[@][a-z]{3,}(.com|.net|.edu|.org)(.eg)$"/>
-                            <input type="password" placeholder="Password" required pattern="[0-9]{9,}"  />
+                            <input type="email" id="usernameInput" placeholder="Example123@gmail.com" required
+                                pattern="^[A-Za-z]{,3}[@][a-z]{3,}(.com|.net|.edu|.org)(.eg)$" />
+                            <input type="password" id="passwordInput" placeholder="Password" required pattern="[0-9]{9,}" />
                             <input type="submit" class="btn_login" onclick="change_to_login()" value="LOG IN"
                                 style="color: beige;">
                         </div>
                     </form>
-
+                    
                     <form action="">
                         <div class="cont_form_sign_up">
                             <a href="#" onclick="hidden_login_and_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
