@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Search low prices on hotels, homes, and much more on Booking.com">
+  <meta name="keywords" content="booking, hotels, homes, travel, vacation">
+
+  <link rel="stylesheet" href="./assets/styles/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/styles/styles.css">
+  <link rel="icon" href="./assets/SVG/bookingcom-1.svg">
+  <title>Airport Taxis</title>
+</head>
+
+<body>
+  <header>
+    <nav class=" container">
+      <h3 class="fw">Booking.com</h3>
+      <ul>
+        <li><a href="#" role="button">EGP</a></li>
+        <li><a href="#" role="button"><img id="ukImage" src="./assets/img/UK.png" alt="Booking.com logo"></a></li>
+        <li class="customerService">
+          <a href="#">
+            <svg class="bk-icon -streamline-question_mark_circle" fill="white" height="24" width="24"
+              viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false">
+              <path
+                d="M9.75 9a2.25 2.25 0 1 1 3 2.122 2.25 2.25 0 0 0-1.5 2.122v1.006a.75.75 0 0 0 1.5 0v-1.006c0-.318.2-.602.5-.708A3.75 3.75 0 1 0 8.25 9a.75.75 0 1 0 1.5 0zM12 16.5a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25.75.75 0 0 0 0 1.5.375.375 0 1 1 0-.75.375.375 0 0 1 0 .75.75.75 0 0 0 0-1.5zM22.5 12c0 5.799-4.701 10.5-10.5 10.5S1.5 17.799 1.5 12 6.201 1.5 12 1.5 22.5 6.201 22.5 12zm1.5 0c0-6.627-5.373-12-12-12S0 5.373 0 12s5.373 12 12 12 12-5.373 12-12z">
+              </path>
+            </svg>
+          </a>
+        </li>
+        <li><a href="#" id="wBtn">List Your Property</a></li>
+        <li><a href="#" class="registerBtn">Register</a></li>
+        <li><a href="#" class="signInBtn">Sign In</a></li>
+      </ul>
+    </nav>
+    <section>
+      <ul>
+        <li class="n__b">
+          <a href="#">
+            <svg class="bk-icon -streamline-bed" fill="white" height="24" width="24" viewBox="0 0 24 24"
+              role="presentation" aria-hidden="true" focusable="false">
+              <path
+                d="M2.75 12h18.5c.69 0 1.25.56 1.25 1.25V18l.75-.75H.75l.75.75v-4.75c0-.69.56-1.25 1.25-1.25zm0-1.5A2.75 2.75 0 0 0 0 13.25V18c0 .414.336.75.75.75h22.5A.75.75 0 0 0 24 18v-4.75a2.75 2.75 0 0 0-2.75-2.75H2.75zM0 18v3a.75.75 0 0 0 1.5 0v-3A.75.75 0 0 0 0 18zm22.5 0v3a.75.75 0 0 0 1.5 0v-3a.75.75 0 0 0-1.5 0zm-.75-6.75V4.5a2.25 2.25 0 0 0-2.25-2.25h-15A2.25 2.25 0 0 0 2.25 4.5v6.75a.75.75 0 0 0 1.5 0V4.5a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 .75.75v6.75a.75.75 0 0 0 1.5 0zm-13.25-3h7a.25.25 0 0 1 .25.25v2.75l.75-.75h-9l.75.75V8.5a.25.25 0 0 1 .25-.25zm0-1.5A1.75 1.75 0 0 0 6.75 8.5v2.75c0 .414.336.75.75.75h9a.75.75 0 0 0 .75-.75V8.5a1.75 1.75 0 0 0-1.75-1.75h-7z">
+              </path>
+            </svg>
+            Stays
+          </a>
+        </li>
+        <li class="n__b">
+          <a href="#">
+            <svg class="bk-icon -streamline-bed" fill="white" height="24" width="24" viewBox="0 0 24 24"
+              role="presentation" aria-hidden="true" focusable="false">
+              <path
+                d="M20.505 7.5l-15.266.022.672.415-1.1-2.2a.75.75 0 0 0-.638-.414l-2.293-.1C.82 5.228-.003 6.06.003 7.083c.002.243.051.484.146.709l2.072 4.68a2.947 2.947 0 0 0 2.701 1.778h4.043l-.676-1.075-2.484 5.168A1.831 1.831 0 0 0 7.449 21h2.099a1.85 1.85 0 0 0 1.419-.664l5.165-6.363-.582.277h4.956c1.82.09 3.399-1.341 3.49-3.198l.004-.134a3.426 3.426 0 0 0-3.44-3.419l-.074.001zm.02 1.5h.042a1.924 1.924 0 0 1 1.933 1.914l-.002.065a1.866 1.866 0 0 1-1.955 1.772l-4.993-.001a.75.75 0 0 0-.582.277l-5.16 6.355a.346.346 0 0 1-.26.118h-2.1a.336.336 0 0 1-.3-.49l2.493-5.185a.75.75 0 0 0-.676-1.075H4.924a1.45 1.45 0 0 1-1.328-.878l-2.07-4.676a.35.35 0 0 1 .326-.474l2.255.1-.638-.415 1.1 2.2a.75.75 0 0 0 .672.415L20.507 9zM16.323 7.76l-2.992-4.02A1.851 1.851 0 0 0 11.85 3H9.783a1.85 1.85 0 0 0-1.654 2.672l1.439 2.91a.75.75 0 0 0 1.344-.664L9.472 5.007a.351.351 0 0 1 .312-.507h2.066a.35.35 0 0 1 .279.14l2.99 4.017a.75.75 0 1 0 1.203-.896z">
+              </path>
+            </svg>
+            Flights
+          </a>
+        </li>
+        <li class="n__b">
+          <a href="#">
+            <svg class="bk-icon -streamline-bed" fill="white" height="24" width="24" viewBox="0 0 24 24"
+              role="presentation" aria-hidden="true" focusable="false">
+              <path
+                d="M21.684 9.443l-1.7-3.79c-.42-1.128-1.542-1.905-2.794-1.903H6.809a2.999 2.999 0 0 0-2.811 1.947L2.316 9.443a.75.75 0 1 0 1.368.614l1.7-3.79c.238-.63.798-1.018 1.424-1.017h10.383a1.5 1.5 0 0 1 1.407.973l1.718 3.834a.75.75 0 1 0 1.368-.614zM.75 16.468V18a2.25 2.25 0 0 0 4.5 0v-1.5a.75.75 0 0 0-1.5 0V18a.75.75 0 0 1-1.5 0v-1.532a.75.75 0 0 0-1.5 0zm21 0V18a.75.75 0 0 1-1.5 0v-1.5a.75.75 0 0 0-1.5 0V18a2.25 2.25 0 0 0 4.5 0v-1.532a.75.75 0 0 0-1.5 0zM19.875 13.5a.375.375 0 0 1-.375-.375.75.75 0 0 0 1.5 0c0-.621-.504-1.125-1.125-1.125a.75.75 0 0 0 0 1.5zm.375-.375a.375.375 0 0 1-.375.375.75.75 0 0 0 0-1.5c-.621 0-1.125.504-1.125 1.125a.75.75 0 0 0 1.5 0zm-.375-.375c.207 0 .375.168.375.375a.75.75 0 0 0-1.5 0c0 .621.504 1.125 1.125 1.125a.75.75 0 0 0 0-1.5zm-.375.375c0-.207.168-.375.375-.375a.75.75 0 0 0 0 1.5c.621 0 1.125-.504 1.125-1.125a.75.75 0 0 0-1.5 0zM4.125 12C3.504 12 3 12.504 3 13.125a.75.75 0 0 0 1.5 0 .375.375 0 0 1-.375.375.75.75 0 0 0 0-1.5zm1.125 1.125c0-.621-.504-1.125-1.125-1.125a.75.75 0 0 0 0 1.5.375.375 0 0 1-.375-.375.75.75 0 0 0 1.5 0zM4.125 14.25c.621 0 1.125-.504 1.125-1.125a.75.75 0 0 0-1.5 0c0-.207.168-.375.375-.375a.75.75 0 0 0 0 1.5zM3 13.125c0 .621.504 1.125 1.125 1.125a.75.75 0 0 0 0-1.5c.207 0 .375.168.375.375a.75.75 0 0 0-1.5 0zM2.75 10.5h18.5c.69 0 1.25.56 1.25 1.25v3.75a.25.25 0 0 1-.25.25H1.75a.25.25 0 0 1-.25-.25v-3.75c0-.69.56-1.25 1.25-1.25zm0-1.5A2.75 2.75 0 0 0 0 11.75v3.75c0 .966.784 1.75 1.75 1.75h20.5A1.75 1.75 0 0 0 24 15.5v-3.75A2.75 2.75 0 0 0 21.25 9H2.75z">
+              </path>
+            </svg>
+            Car Rentals
+          </a>
+        </li>
+        <li class="n__b">
+          <a href="#">
+            <svg class="bk-icon -streamline-bed" fill="white" height="24" width="24" viewBox="0 0 24 24"
+              role="presentation" aria-hidden="true" focusable="false">
+              <path
+                d="M13.5 3a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM15 3a3 3 0 1 0-6 0 3 3 0 0 0 6 0zm6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm1.5 0a3 3 0 1 0-6 0 3 3 0 0 0 6 0zM6 7.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm1.5 0a3 3 0 1 0-6 0 3 3 0 0 0 6 0zM21 15a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm1.5 0a3 3 0 1 0-6 0 3 3 0 0 0 6 0zm-9-3.75a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm1.5 0a3 3 0 1 0-6 0 3 3 0 0 0 6 0zM6 15a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm1.5 0a3 3 0 1 0-6 0 3 3 0 0 0 6 0zm10.066 1.277a7.5 7.5 0 0 1-3.077 2.05.75.75 0 0 0 .498 1.415 9 9 0 0 0 3.693-2.46.75.75 0 1 0-1.114-1.005zm1.798-6.466c.177.922.183 1.869.015 2.792a.75.75 0 1 0 1.476.268c.2-1.106.194-2.24-.019-3.344a.75.75 0 1 0-1.472.284zm-5.337-5.784a7.5 7.5 0 0 1 3.54 2.196.75.75 0 0 0 1.113-1.004 9.002 9.002 0 0 0-4.247-2.636.75.75 0 1 0-.406 1.444zM6.434 6.223a7.5 7.5 0 0 1 3.539-2.196.75.75 0 1 0-.406-1.444A9.001 9.001 0 0 0 5.32 5.219a.75.75 0 0 0 1.114 1.004zM4.636 12.69a7.602 7.602 0 0 1 0-2.878.75.75 0 1 0-1.472-.284 9.102 9.102 0 0 0 0 3.446.75.75 0 0 0 1.472-.284zm4.876 5.639a7.517 7.517 0 0 1-3.035-2.005.75.75 0 0 0-1.106 1.014 9.017 9.017 0 0 0 3.641 2.405.75.75 0 1 0 .5-1.414zM7.31 21.872A1.5 1.5 0 0 0 8.672 24h6.656a1.5 1.5 0 0 0 1.362-2.128l-3.314-8.217c-.361-.785-1.252-1.114-2.005-.767a1.5 1.5 0 0 0-.733.734l-3.343 8.283zm1.377.595l3.328-8.25-.015.033 3.313 8.217.015.033H8.672z">
+              </path>
+            </svg>
+            Attractions
+          </a>
+        </li>
+        <li id="airportTaxis">
+          <a href="#">
+            <svg class="bk-icon -streamline-bed" fill="white" height="24" width="24" viewBox="0 0 24 24"
+              role="presentation" aria-hidden="true" focusable="false">
+              <path
+                d="M21.75 15.5V8a.75.75 0 0 0-1.5 0v7.5a.75.75 0 0 0 1.5 0zm-16.5 0V8a.75.75 0 0 0-1.5 0v7.5a.75.75 0 0 0 1.5 0zM3 8.75h3a.75.75 0 0 0 0-1.5H3a.75.75 0 0 0 0 1.5zm6.75 6.75v-6a.75.75 0 0 1 1.5 0v6a.75.75 0 0 0 1.5 0v-6a2.25 2.25 0 0 0-4.5 0v6a.75.75 0 0 0 1.5 0zM9 13.25h3a.75.75 0 0 0 0-1.5H9a.75.75 0 0 0 0 1.5zm5.304-4.971l3 7.5a.75.75 0 0 0 1.392-.557l-3-7.5a.75.75 0 0 0-1.392.557zm3-.558l-3 7.5a.75.75 0 0 0 1.392.557l3-7.5a.75.75 0 0 0-1.392-.557zM.75 5h22.5a.75.75 0 0 0 0-1.5H.75a.75.75 0 0 0 0 1.5zm0 15h22.5a.75.75 0 0 0 0-1.5H.75a.75.75 0 0 0 0 1.5z">
+              </path>
+            </svg>
+            Airport Taxis
+          </a>
+        </li>
+      </ul>
+    </section>
+  </header>
+  <div class="container">
+    <!-- covid section -->
+    <div>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <div>
+                <h5 class="pt-2">
+                  <svg class="bk-icon -streamline-info_sign" fill="#CD8900" height="24" width="24" viewBox="0 0 24 24"
+                    role="presentation" aria-hidden="true" focusable="false">
+                    <path
+                      d="M14.25 15.75h-.75a.75.75 0 0 1-.75-.75v-3.75a1.5 1.5 0 0 0-1.5-1.5h-.75a.75.75 0 0 0 0 1.5h.75V15a2.25 2.25 0 0 0 2.25 2.25h.75a.75.75 0 0 0 0-1.5zM11.625 6a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25.75.75 0 0 0 0 1.5.375.375 0 1 1 0-.75.375.375 0 0 1 0 .75.75.75 0 0 0 0-1.5zM22.5 12c0 5.799-4.701 10.5-10.5 10.5S1.5 17.799 1.5 12 6.201 1.5 12 1.5 22.5 6.201 22.5 12zm1.5 0c0-6.627-5.373-12-12-12S0 5.373 0 12s5.373 12 12 12 12-5.373 12-12z">
+                    </path>
+                  </svg>
+                  Protecting you during COVID-19
+                </h5>
+              </div>
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p class="covid__text--style">Your safety matters. From July 2020, we`re asking all customers to wear a
+                face
+                covering when travelling with
+                us.
+                If you don`t wear a face covering, your driver may not be able to start your journey. Where Coronavirus
+                may
+                affect
+                your plans, here`s what you need to know about booking with us at this time.
+                <br><br>
+                <a href="#" class="ndl"><strong>Read more</strong></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- search bar section -->
+    <div class="container searchBar__section">
+      <div>
+        <h4>Book your airport taxi</h4>
+        <p>Easy airport transfers to and from your accommodation</p>
+        <div class="search__radio">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" onclick="searchStyle(this)" type="radio" name="inlineRadioOptions"
+              id="inlineRadio1" value="0">
+            <label class="form-check-label" for="inlineRadio1" checked>One-way</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" onclick="searchStyle(this)" type="radio" name="inlineRadioOptions"
+              id="inlineRadio2" value="1">
+            <label class="form-check-label" for="inlineRadio2">Return</label>
+          </div>
+        </div>
+        <div id="search__1">
+          <div class="search row">
+            <div class="col-6 row s1">
+              <div class="pos col">
+                <input class="search__input--1" type="text" placeholder="Enter pick-up location">
+                <svg class="input__image" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  focusable="false" width="25px" height="25px">
+                  <path
+                    d="M31.939 29.918c4.816 0 8.734-3.918 8.734-8.734 0-4.817-3.918-8.735-8.734-8.653-4.817 0-8.653 3.918-8.653 8.734-.082 4.735 3.836 8.653 8.653 8.653M30.796 2h2.367c.898.163 1.878.245 2.776.408 3.51.735 6.612 2.368 9.143 4.898 2.938 2.857 4.734 6.286 5.469 10.286.163.898.245 1.796.327 2.694v1.306c-.082.735-.164 1.47-.327 2.286-.653 3.918-1.96 7.673-3.51 11.346-3.919 9.143-8.898 17.796-14.286 26.123-.163.245-.408.408-.571.653h-.49c-.163-.245-.327-.408-.49-.653-5.633-7.918-10.612-16.082-14.367-25.061-1.388-3.347-2.613-6.857-3.266-10.53-.244-1.389-.408-2.776-.571-4.164v-1.388c0-.163.082-.326.082-.49.081-2.612.816-5.143 1.959-7.428 2.53-4.898 6.449-8.164 11.755-9.633 1.388-.326 2.694-.49 4-.653"
+                    fill-rule="evenodd">
+                  </path>
+                </svg>
+              </div>
+              <div class="pos col">
+                <input class="search__input--1" type="text" placeholder="Enter destination">
+                <svg class="input__image" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  focusable="false" width="25px" height="25px">
+                  <path
+                    d="M31.939 29.918c4.816 0 8.734-3.918 8.734-8.734 0-4.817-3.918-8.735-8.734-8.653-4.817 0-8.653 3.918-8.653 8.734-.082 4.735 3.836 8.653 8.653 8.653M30.796 2h2.367c.898.163 1.878.245 2.776.408 3.51.735 6.612 2.368 9.143 4.898 2.938 2.857 4.734 6.286 5.469 10.286.163.898.245 1.796.327 2.694v1.306c-.082.735-.164 1.47-.327 2.286-.653 3.918-1.96 7.673-3.51 11.346-3.919 9.143-8.898 17.796-14.286 26.123-.163.245-.408.408-.571.653h-.49c-.163-.245-.327-.408-.49-.653-5.633-7.918-10.612-16.082-14.367-25.061-1.388-3.347-2.613-6.857-3.266-10.53-.244-1.389-.408-2.776-.571-4.164v-1.388c0-.163.082-.326.082-.49.081-2.612.816-5.143 1.959-7.428 2.53-4.898 6.449-8.164 11.755-9.633 1.388-.326 2.694-.49 4-.653"
+                    fill-rule="evenodd">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <div class="col-6 s1">
+              <input class="search__input--2" type="date" value="2023-04-15">
+              <input class="search__input--2" type="time" value="12:00">
+              <input class="search__input--2" type="number" placeholder="1">
+            </div>
+          </div>
+        </div>
+        <div class="search__2">
+          <div class="search row">
+            <div class="col-6 row s1">
+              <div class="pos col">
+                <input class="search__input--1" type="text" placeholder="Enter pick-up location">
+                <svg class="input__image" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  focusable="false" width="25px" height="25px">
+                  <path
+                    d="M31.939 29.918c4.816 0 8.734-3.918 8.734-8.734 0-4.817-3.918-8.735-8.734-8.653-4.817 0-8.653 3.918-8.653 8.734-.082 4.735 3.836 8.653 8.653 8.653M30.796 2h2.367c.898.163 1.878.245 2.776.408 3.51.735 6.612 2.368 9.143 4.898 2.938 2.857 4.734 6.286 5.469 10.286.163.898.245 1.796.327 2.694v1.306c-.082.735-.164 1.47-.327 2.286-.653 3.918-1.96 7.673-3.51 11.346-3.919 9.143-8.898 17.796-14.286 26.123-.163.245-.408.408-.571.653h-.49c-.163-.245-.327-.408-.49-.653-5.633-7.918-10.612-16.082-14.367-25.061-1.388-3.347-2.613-6.857-3.266-10.53-.244-1.389-.408-2.776-.571-4.164v-1.388c0-.163.082-.326.082-.49.081-2.612.816-5.143 1.959-7.428 2.53-4.898 6.449-8.164 11.755-9.633 1.388-.326 2.694-.49 4-.653"
+                    fill-rule="evenodd">
+                  </path>
+                </svg>
+              </div>
+              <div class="pos col">
+                <input class="search__input--1" type="text" placeholder="Enter destination">
+                <svg class="input__image" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  focusable="false" width="25px" height="25px">
+                  <path
+                    d="M31.939 29.918c4.816 0 8.734-3.918 8.734-8.734 0-4.817-3.918-8.735-8.734-8.653-4.817 0-8.653 3.918-8.653 8.734-.082 4.735 3.836 8.653 8.653 8.653M30.796 2h2.367c.898.163 1.878.245 2.776.408 3.51.735 6.612 2.368 9.143 4.898 2.938 2.857 4.734 6.286 5.469 10.286.163.898.245 1.796.327 2.694v1.306c-.082.735-.164 1.47-.327 2.286-.653 3.918-1.96 7.673-3.51 11.346-3.919 9.143-8.898 17.796-14.286 26.123-.163.245-.408.408-.571.653h-.49c-.163-.245-.327-.408-.49-.653-5.633-7.918-10.612-16.082-14.367-25.061-1.388-3.347-2.613-6.857-3.266-10.53-.244-1.389-.408-2.776-.571-4.164v-1.388c0-.163.082-.326.082-.49.081-2.612.816-5.143 1.959-7.428 2.53-4.898 6.449-8.164 11.755-9.633 1.388-.326 2.694-.49 4-.653"
+                    fill-rule="evenodd">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <div class="col-6 s1">
+              <input class="search__input--2" type="date" value="2023-04-15">
+              <input class="search__input--2" type="time" value="12:00">
+              <input class="search__input--2" type="number" placeholder="1">
+              <button class="search__input--2 search__btn">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="container">
+      <div class="row main__content"> <!--first section-->
+        <div class="col row">
+          <div class="col-2">
+            <svg viewBox="0 0 128 128" width="2.5em" height="2.5em">
+              <path
+                d="M8.3 83.1l2.8-2.8a1 1 0 0 1 .7-.3h27.3l16-17.5-41.7-32a4 4 0 0 1-1.1-5.3l1.3-2.8a4 4 0 0 1 5.1-1.6l55.5 21.1L98 16a28.6 28.6 0 0 1 18-8 4 4 0 0 1 4 4 28.6 28.6 0 0 1-8 18L86.6 53.4l21 55.3a4 4 0 0 1-1.6 5.1l-2.7 1.4A4 4 0 0 1 98 114L66 72.3 48 89v27.3a1 1 0 0 1-.3.7l-2.8 2.8a1 1 0 0 1-1.6-.2L30.7 97.3 8.5 84.7a1 1 0 0 1-.2-1.6z">
+              </path>
+            </svg>
+          </div>
+          <div class="col">
+            <h4>Flight tracking</h4>
+            <p>Your driver tracks your flight and waits for you if it's delayed</p>
+          </div>
+        </div>
+        <div class="col row">
+          <div class="col-2">
+            <svg viewBox="0 0 128 128" width="2.5em" height="2.5em">
+              <path
+                d="M108 24H20A12 12 0 0 0 8 36v56a12 12 0 0 0 12 12h88a12 12 0 0 0 12-12V36a12 12 0 0 0-12-12zm-88 8h88a4 4 0 0 1 4 4v4H16v-4a4 4 0 0 1 4-4zm88 64H20a4 4 0 0 1-4-4V56h96v36a4 4 0 0 1-4 4zM24 72h48v8H24z">
+              </path>
+            </svg>
+          </div>
+          <div class="col">
+            <h4>One clear price</h4>
+            <p>Your price is confirmed upfront – no extra costs, no cash required</p>
+          </div>
+        </div>
+        <div class="col row">
+          <div class="col-2">
+            <svg viewBox="0 0 128 128" width="2.5em" height="2.5em">
+              <path
+                d="M52 102a8 8 0 0 1-5.7-2.3l-28-28a8 8 0 0 1 11.4-11.4L52 82.7l46.3-46.4a8 8 0 0 1 11.4 11.4l-52 52A8 8 0 0 1 52 102z">
+              </path>
+            </svg>
+          </div>
+          <div class="col">
+            <h4>Tried and trusted</h4>
+            <p>We work with professional drivers and have 24/7 customer care</p>
+          </div>
+        </div>
+      </div>
+      <div class="Airport__transfers"> <!--Airport transfers made easy-->
+        <h2>
+          Airport transfers made easy
+        </h2>
+        <div class="row m-5">
+          <div class="col">
+            <div class="col col mx-auto p-2 row top40">
+              <div class="col-2">
+                <span>
+                  <img src="./assets/SVG/tax.svg">
+                </span>
+              </div>
+              <div class="col">
+                <h4>Booking your airport taxi</h4>
+                <p>Confirmation is immediate. If your plans change, you can cancel for free up to 24 hours before your
+                  scheduled pick-up time</p>
+              </div>
+            </div>
+            <div class="col col mx-auto p-2 row">
+              <div class="col-2">
+                <span class="material-symbols-outlined">
+                  <img src="./assets/SVG/taxi-driver.svg">
+                </span>
+              </div>
+              <div class="col">
+                <h4>Meeting your driver</h4>
+                <p>You'll be met on arrival and taken to your vehicle. Your driver will track your flight, so they'll
+                  wait for you even if it's delayed</p>
+              </div>
+            </div>
+            <div class="col col mx-auto p-2 row">
+              <div class="col-2">
+                <span class="material-symbols-outlined">
+                  <img src="./assets/SVG/destination.svg">
+                </span>
+              </div>
+              <div class="col">
+                <h4>Arriving at your destination</h4>
+                <p>Get to your destination quickly and safely – no waiting in line for a taxi, no figuring out public
+                  transport</p>
+              </div>
+            </div>
+          </div>
+          <div class="col hiw">
+            <div class="hiw__massage">
+              How does it work?
+            </div>
+            <div>
+              <div class="hiw__text1">Book online</div>
+              <div class="hiw__text2">Receive confirmation</div>
+              <div class="hiw__text3">Arrive at your destination
+              </div>
+              <div class="hiw__text4">Meet your driver</div>
+              <div class="hiw__text5">Enjoy your trip!</div>
+              <img class="img" src="./assets/SVG/taxi-how-it-works.svg">
+            </div>
+          </div>
+        </div>
+        <div class="Airport__taxis"> <!--Airport taxis for any kind of trip-->
+          <h2>Airport taxis for any kind of trip</h2>
+          <ul class="Airport__taxis--btn">
+            <li>
+              <input type="radio" class="btn-check" onclick="show(this)" value="1" id="btn1" name="r1" checked>
+              <label class="btn btn-outline-primary rounded-0" for="btn1">1 – 3 passengers</label><br>
+            </li>
+            <li>
+              <input type="radio" class="btn-check" onclick="show(this)" value="2" id="btn2" name="r1">
+              <label class="btn btn-outline-primary rounded-0" for="btn2">4 – 7 passengers</label><br>
+            </li>
+            <li>
+              <input type="radio" class="btn-check" onclick="show(this)" value="3" id="btn3" name="r1">
+              <label class="btn btn-outline-primary rounded-0" for="btn3">All taxis</label><br>
+            </li>
+          </ul>
+          <div class="Airport__taxis--divs">
+            <div class="row" id="oneToThree">
+              <div class="card col cards">
+                <div class="card-body">
+                  <h5 class="card-title">Standard</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Skoda Octavia or similar</h6>
+                  <ul class="card-text Airport__taxis--card">
+                    <li class="li__it">
+                      <svg viewBox="0 0 128 128" width="1em" height="1em">
+                        <path
+                          d="M104 120H24a8 8 0 0 1-8-8V93.5a4 4 0 0 1 1-2.7C21.3 86.4 36.9 72 64 72s42.8 14.4 47 18.8a4 4 0 0 1 1 2.7V112a8 8 0 0 1-8 8zM64 8a28 28 0 1 0 28 28A28 28 0 0 0 64 8z">
+                        </path>
+                      </svg>
+                      <span>
+                        3 passengers
+                      </span>
+                    </li>
+                    <li class="li__it">
+                      <svg viewBox="0 0 128 128" width="1em" height="1em">
+                        <path
+                          d="M112 32H80v-4a12 12 0 0 0-12-12h-8a12 12 0 0 0-12 12v4H16a8 8 0 0 0-8 8v64a8 8 0 0 0 8 8h96a8 8 0 0 0 8-8V40a8 8 0 0 0-8-8zm-56-4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v4H56zm-32 72a4 4 0 0 1-8 0V52a4 4 0 0 1 8 0zm88 0a4 4 0 0 1-8 0V52a4 4 0 0 1 8 0z">
+                        </path>
+                      </svg>
+                      2 standard bags
+                    </li>
+                    <li class="li__it li__3rd">
+                      <svg viewBox="0 0 128 128" fill="#0071c2" width="1em" height="1em">
+                        <path
+                          d="M94.8 41.2a4 4 0 0 1 0 5.6l-40 40a4 4 0 0 1-5.6 0l-16-16a4 4 0 0 1 5.6-5.6L52 78.3l37.2-37.1a4 4 0 0 1 5.6 0zM120 64A56 56 0 1 1 64 8a56 56 0 0 1 56 56zm-8 0a48 48 0 1 0-48 48 48 48 0 0 0 48-48z">
+                        </path>
+                      </svg>
+                      Meet & Greet included
+                    </li>
+                    <li class="li__it li__4th">
+                      <svg viewBox="0 0 128 128" fill="#008009" width="1em" height="1em">
+                        <path
+                          d="M52 102a8 8 0 0 1-5.7-2.3l-28-28a8 8 0 0 1 11.4-11.4L52 82.7l46.3-46.4a8 8 0 0 1 11.4 11.4l-52 52A8 8 0 0 1 52 102z">
+                        </path>
+                      </svg>
+                      Free cancellation
+                    </li>
+                    <li class="li__it">
+                      <a href="#" class="search__input search__btn btn btn-primary rounded-0">
+                        Search
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card col cards">
+                <div class="card-body">
+                  <h5 class="card-title">Executive</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Mercedes-Benz E-Class or similar</h6>
+                  <ul class="card-text Airport__taxis--card">
+                    <li class="li__it">
+                      <svg viewBox="0 0 128 128" width="1em" height="1em">
+                        <path
+                          d="M104 120H24a8 8 0 0 1-8-8V93.5a4 4 0 0 1 1-2.7C21.3 86.4 36.9 72 64 72s42.8 14.4 47 18.8a4 4 0 0 1 1 2.7V112a8 8 0 0 1-8 8zM64 8a28 28 0 1 0 28 28A28 28 0 0 0 64 8z">
+                        </path>
+                      </svg>
+                      <span>
+                        3 passengers
+                      </span>
+                    </li>
+                    <li class="li__it">
+                      <svg viewBox="0 0 128 128" width="1em" height="1em">
+                        <path
+                          d="M112 32H80v-4a12 12 0 0 0-12-12h-8a12 12 0 0 0-12 12v4H16a8 8 0 0 0-8 8v64a8 8 0 0 0 8 8h96a8 8 0 0 0 8-8V40a8 8 0 0 0-8-8zm-56-4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v4H56zm-32 72a4 4 0 0 1-8 0V52a4 4 0 0 1 8 0zm88 0a4 4 0 0 1-8 0V52a4 4 0 0 1 8 0z">
+                        </path>
+                      </svg>
+                      2 standard bags
+                    </li>
+                    <li class="li__it li__3rd">
+                      <svg viewBox="0 0 128 128" fill="#0071c2" width="1em" height="1em">
+                        <path
+                          d="M94.8 41.2a4 4 0 0 1 0 5.6l-40 40a4 4 0 0 1-5.6 0l-16-16a4 4 0 0 1 5.6-5.6L52 78.3l37.2-37.1a4 4 0 0 1 5.6 0zM120 64A56 56 0 1 1 64 8a56 56 0 0 1 56 56zm-8 0a48 48 0 1 0-48 48 48 48 0 0 0 48-48z">
+                        </path>
+                      </svg>
+                      Meet & Greet included
+                    </li>
+                    <li class="li__it li__4th">
+                      <svg viewBox="0 0 128 128" fill="#008009" width="1em" height="1em">
+                        <path
+                          d="M52 102a8 8 0 0 1-5.7-2.3l-28-28a8 8 0 0 1 11.4-11.4L52 82.7l46.3-46.4a8 8 0 0 1 11.4 11.4l-52 52A8 8 0 0 1 52 102z">
+                        </path>
+                      </svg>
+                      Free cancellation
+                    </li>
+                    <li class="li__it">
+                      <button class="search__input search__btn btn btn-primary rounded-0">
+                        Search
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="fourToSaven">
+              <div class="row">
+                <div class="card col cards">
+                  <div class="card-body">
+                    <h5 class="card-title">People carrier</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Peugeot 5008 or similar</h6>
+                    <ul class="card-text Airport__taxis--card">
+                      <li class="li__it">
+                        <svg viewBox="0 0 128 128" width="1em" height="1em">
+                          <path
+                            d="M104 120H24a8 8 0 0 1-8-8V93.5a4 4 0 0 1 1-2.7C21.3 86.4 36.9 72 64 72s42.8 14.4 47 18.8a4 4 0 0 1 1 2.7V112a8 8 0 0 1-8 8zM64 8a28 28 0 1 0 28 28A28 28 0 0 0 64 8z">
+                          </path>
+                        </svg>
+                        <span>
+                          5 passengers
+                        </span>
+                      </li>
+                      <li class="li__it">
+                        <svg viewBox="0 0 128 128" width="1em" height="1em">
+                          <path
+                            d="M112 32H80v-4a12 12 0 0 0-12-12h-8a12 12 0 0 0-12 12v4H16a8 8 0 0 0-8 8v64a8 8 0 0 0 8 8h96a8 8 0 0 0 8-8V40a8 8 0 0 0-8-8zm-56-4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v4H56zm-32 72a4 4 0 0 1-8 0V52a4 4 0 0 1 8 0zm88 0a4 4 0 0 1-8 0V52a4 4 0 0 1 8 0z">
+                          </path>
+                        </svg>
+                        5 standard bags
+                      </li>
+                      <li class="li__it li__3rd">
+                        <svg viewBox="0 0 128 128" fill="#0071c2" width="1em" height="1em">
+                          <path
+                            d="M94.8 41.2a4 4 0 0 1 0 5.6l-40 40a4 4 0 0 1-5.6 0l-16-16a4 4 0 0 1 5.6-5.6L52 78.3l37.2-37.1a4 4 0 0 1 5.6 0zM120 64A56 56 0 1 1 64 8a56 56 0 0 1 56 56zm-8 0a48 48 0 1 0-48 48 48 48 0 0 0 48-48z">
+                          </path>
+                        </svg>
+                        Meet & Greet included
+                      </li>
+                      <li class="li__it li__4th">
+                        <svg viewBox="0 0 128 128" fill="#008009" width="1em" height="1em">
+                          <path
+                            d="M52 102a8 8 0 0 1-5.7-2.3l-28-28a8 8 0 0 1 11.4-11.4L52 82.7l46.3-46.4a8 8 0 0 1 11.4 11.4l-52 52A8 8 0 0 1 52 102z">
+                          </path>
+                        </svg>
+                        Free cancellation
+                      </li>
+                      <li class="li__it">
+                        <button class="search__input search__btn btn btn-primary rounded-0">
+                          Search
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card col cards">
+                  <div class="card-body">
+                    <h5 class="card-title">Executive people carrier</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Mercedes-Benz V-Class or similar</h6>
+                    <ul class="card-text Airport__taxis--card">
+                      <li class="li__it">
+                        <svg viewBox="0 0 128 128" width="1em" height="1em">
+                          <path
+                            d="M104 120H24a8 8 0 0 1-8-8V93.5a4 4 0 0 1 1-2.7C21.3 86.4 36.9 72 64 72s42.8 14.4 47 18.8a4 4 0 0 1 1 2.7V112a8 8 0 0 1-8 8zM64 8a28 28 0 1 0 28 28A28 28 0 0 0 64 8z">
+                          </path>
+                        </svg>
+                        <span>
+                          6 passengers
+                        </span>
+                      </li>
+                      <li class="li__it">
+                        <svg viewBox="0 0 128 128" width="1em" height="1em">
+                          <path
+                            d="M112 32H80v-4a12 12 0 0 0-12-12h-8a12 12 0 0 0-12 12v4H16a8 8 0 0 0-8 8v64a8 8 0 0 0 8 8h96a8 8 0 0 0 8-8V40a8 8 0 0 0-8-8zm-56-4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v4H56zm-32 72a4 4 0 0 1-8 0V52a4 4 0 0 1 8 0zm88 0a4 4 0 0 1-8 0V52a4 4 0 0 1 8 0z">
+                          </path>
+                        </svg>
+                        6 standard bags
+                      </li>
+                      <li class="li__it li__3rd">
+                        <svg viewBox="0 0 128 128" fill="#0071c2" width="1em" height="1em">
+                          <path
+                            d="M94.8 41.2a4 4 0 0 1 0 5.6l-40 40a4 4 0 0 1-5.6 0l-16-16a4 4 0 0 1 5.6-5.6L52 78.3l37.2-37.1a4 4 0 0 1 5.6 0zM120 64A56 56 0 1 1 64 8a56 56 0 0 1 56 56zm-8 0a48 48 0 1 0-48 48 48 48 0 0 0 48-48z">
+                          </path>
+                        </svg>
+                        Meet & Greet included
+                      </li>
+                      <li class="li__it li__4th">
+                        <svg viewBox="0 0 128 128" fill="#008009" width="1em" height="1em">
+                          <path
+                            d="M52 102a8 8 0 0 1-5.7-2.3l-28-28a8 8 0 0 1 11.4-11.4L52 82.7l46.3-46.4a8 8 0 0 1 11.4 11.4l-52 52A8 8 0 0 1 52 102z">
+                          </path>
+                        </svg>
+                        Free cancellation
+                      </li>
+                      <li class="li__it">
+                        <button class="search__input search__btn btn btn-primary rounded-0">
+                          Search
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card col cards">
+                  <div class="card-body">
+                    <h5 class="card-title">Large people carrier</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Ford Tourneo or similar</h6>
+                    <ul class="card-text Airport__taxis--card">
+                      <li class="li__it">
+                        <svg viewBox="0 0 128 128" width="1em" height="1em">
+                          <path
+                            d="M104 120H24a8 8 0 0 1-8-8V93.5a4 4 0 0 1 1-2.7C21.3 86.4 36.9 72 64 72s42.8 14.4 47 18.8a4 4 0 0 1 1 2.7V112a8 8 0 0 1-8 8zM64 8a28 28 0 1 0 28 28A28 28 0 0 0 64 8z">
+                          </path>
+                        </svg>
+                        <span>
+                          7 passengers
+                        </span>
+                      </li>
+                      <li class="li__it">
+                        <svg viewBox="0 0 128 128" width="1em" height="1em">
+                          <path
+                            d="M112 32H80v-4a12 12 0 0 0-12-12h-8a12 12 0 0 0-12 12v4H16a8 8 0 0 0-8 8v64a8 8 0 0 0 8 8h96a8 8 0 0 0 8-8V40a8 8 0 0 0-8-8zm-56-4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v4H56zm-32 72a4 4 0 0 1-8 0V52a4 4 0 0 1 8 0zm88 0a4 4 0 0 1-8 0V52a4 4 0 0 1 8 0z">
+                          </path>
+                        </svg>
+                        7 standard bags
+                      </li>
+                      <li class="li__it li__3rd">
+                        <svg viewBox="0 0 128 128" fill="#0071c2" width="1em" height="1em">
+                          <path
+                            d="M94.8 41.2a4 4 0 0 1 0 5.6l-40 40a4 4 0 0 1-5.6 0l-16-16a4 4 0 0 1 5.6-5.6L52 78.3l37.2-37.1a4 4 0 0 1 5.6 0zM120 64A56 56 0 1 1 64 8a56 56 0 0 1 56 56zm-8 0a48 48 0 1 0-48 48 48 48 0 0 0 48-48z">
+                          </path>
+                        </svg>
+                        Meet & Greet included
+                      </li>
+                      <li class="li__it li__4th">
+                        <svg viewBox="0 0 128 128" fill="#008009" width="1em" height="1em">
+                          <path
+                            d="M52 102a8 8 0 0 1-5.7-2.3l-28-28a8 8 0 0 1 11.4-11.4L52 82.7l46.3-46.4a8 8 0 0 1 11.4 11.4l-52 52A8 8 0 0 1 52 102z">
+                          </path>
+                        </svg>
+                        Free cancellation
+                      </li>
+                      <li class="li__it">
+                        <button class="search__input search__btn btn btn-primary rounded-0">
+                          Search
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fineMore">
+            <div class="row">
+              <div class="col-4">
+                <h3>Find out more about our airport taxi service</h3>
+                <span>See more FAQs on our <a href="#">help page</a></span>
+              </div>
+              <div class="col-8">
+                <div class="accordion" id="lastAccordion">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#data1" aria-expanded="true" aria-controls="data1">
+                        What happens if my flight is early or delayed?
+                      </button>
+                    </h2>
+                    <div id="data1" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        Our Meet & Greet service means that if you provide your flight number when you're booking your
+                        airport taxi, we'll be able to track your flight and adjust your pick-up time automatically
+                        according to your actual arrival time. Once your flight has landed, your driver will wait for 45
+                        minutes. This should give you plenty of time to pass through security, claim your baggage and
+                        head through to arrivals to meet your driver.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#data2" aria-expanded="true" aria-controls="data2">
+                        What's included in the price?
+                      </button>
+                    </h2>
+                    <div id="data2" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        Our prices include all taxes, fees, gratuity and toll road charges. If you book an airport
+                        pick-up, prices also include Meet & Greet as standard, which means we'll track your flight and
+                        wait for 45 minutes from the time your flight arrives. If you book a return taxi to the airport
+                        – or any other non-airport pick-up – your driver will wait for 15 minutes after the scheduled
+                        pick-up time. Please note that you may have to pay an additional cost for certain special
+                        requests or any amendments you want to make to your journey.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#data3" aria-expanded="true" aria-controls="data3">
+                        How do I pay?
+                      </button>
+                    </h2>
+                    <div id="data3" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        All of our private transport services are pre-paid, which means you pay online at the time of
+                        booking. Payment is secure, and we accept most major credit cards, debit cards, PayPal, and
+                        eligible rewards in your Booking.com Wallet.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#data4" aria-expanded="true" aria-controls="data4">
+                        Can I cancel my booking?
+                      </button>
+                    </h2>
+                    <div id="data4" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        Yes. You can always cancel your booking for free up to 24 hours prior to your scheduled pick-up
+                        time. Some of our partners allow a shorter window for free cancellation. Check your booking
+                        confirmation for more information.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer>
+    <div class="text-white d-flex justify-content-center align-items-center flex-column text-center footer__top">
+      <h3>Save time, save money!</h3>
+      <p>Sign up and we'll send the best deals to you</p>
+      <div>
+        <input class="footer__input" type="text" placeholder="Your email address">
+        <button class="btn btn-primary rounded-1 p-3 footer__input--btn">
+          Subscribe
+        </button>
+      </div>
+    </div>
+    <div class="text-white d-flex justify-content-center align-items-center footer__btn">
+      <button class="btn border text-light">
+        List your property
+      </button>
+    </div>
+    <div class="mid__footer">
+      <div class="container">
+        <div>
+          <ul class="mid__footer--list">
+            <li>
+              <a class="mid__footer--item" href="">
+                Mobile version
+              </a>
+            </li>
+            <li>
+              <a class="mid__footer--item" href="">
+                Your account
+              </a>
+            </li>
+            <li>
+              <a class="mid__footer--item" href="">
+                Make changes to your booking online
+              </a>
+            </li>
+            <li>
+              <a class="mid__footer--item" href="">
+                Customer Service help
+              </a>
+            </li>
+            <li>
+              <a class="mid__footer--item" href="">
+                Become an affiliate
+              </a>
+            </li>
+            <li>
+              <a class="mid__footer--item" href="">
+                Booking.com for Business
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-2">
+        <ul class="bot__footer--list">
+          <li>
+            <a class="f-l" href="">
+              Countries
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Regions
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Cities
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Districts
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Airports
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Hotels
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Places of interest
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <ul class="bot__footer--list">
+          <li>
+            <a class="f-l" href="">
+              Homes
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Apartments
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Resorts
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Villas
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Hostels
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              B&Bs
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Guest houses
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <ul class="bot__footer--list">
+          <li>
+            <a class="f-l" href="">
+              Unique places to stay
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Reviews
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Discover monthly stays
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Unpacked: Travel articles
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Seasonal and holiday deals
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Traveller Review Awards
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <ul class="bot__footer--list">
+          <li>
+            <a class="f-l" href="">
+              Car hire
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Flight finder
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Restaurant reservations
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Booking.com for Travel Agents
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <ul class="bot__footer--list">
+          <li>
+            <a class="f-l" href="">
+              Coronavirus (COVID-19) FAQs
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              About Booking.com
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Customer Service help
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Partner help
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Careers
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Sustainability
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Press centre
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Safety resource centre
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Investor relations
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Terms & Conditions
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Partner dispute
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              How we work
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Privacy & Cookie Statement
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              MSA Statement
+            </a>
+          </li>
+          <li>
+            <a class="f-l" href="">
+              Corporate contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center align-items-center">
+      <button class="btn foter__elments">
+        Extranet login
+      </button>
+      <div class="col-1"></div>
+      <p class="col-11 justify-self-start foter__elments">
+        Copyright © 1996–2023 Booking.com™. All rights reserved.
+      </p>
+    </div>
+    <div class="row d-flex justify-content-center align-items-center foter__elments">
+      <div class="col-3"></div>
+      <p class="col-9">
+        Booking.com is part of Booking Holdings Inc., the world leader in online travel and related services.
+      </p>
+    </div>
+    <div class="footer__end">
+      <ul class="footer__end--list">
+        <li class="f__img">
+          <img src="./assets/img/booking.com.png">
+        </li>
+        <li class="f__img">
+          <img src="./assets/img/priceline.com.png">
+        </li>
+        <li class="f__img">
+          <img src="./assets/img/KAYAK.png">
+        </li>
+        <li class="f__img">
+          <img src="./assets/img/agada.png">
+        </li>
+        <li class="f__img">
+          <img src="./assets/img/Rentalcars.com.png">
+        </li>
+        <li class="f__img">
+          <img src="./assets/img/OpenTable.png">
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="./assets/scrpts/bootstrap.min.js"></script>
+  <script src="./assets/scrpts/scrpts.js"></script>
+</body>
+
+</html>
