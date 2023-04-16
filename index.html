@@ -628,10 +628,19 @@
     </header>
     <main class="py-5 container d-flex flex-column justify-content-center align-items-center"> 
       <!-- search bar section -->
-      <div id="searchBar" class="d-flex align-items-center justify-content-around p-3 rounded-1">
+      <div id="searchBar" class="d-flex align-items-center justify-content-around p-3 rounded-1 position-relative position-absolute">
         <div id="searchItem1">
           <i class="fa-solid fa-bed"></i>
           <input type="text" placeholder="where are you going?" class="headerSearchInput">
+        </div>
+        <div id="peopleNearbyDiv" class="shadow position-absolute">
+          <p class="fw-bold align-self-start">People Near Your Destination</p>
+          <ul>
+            <li onclick="showSelectedLocation('Hurgada')"> <i class="fa-solid fa-location-dot"></i> Hurgada</li>
+            <li onclick="showSelectedLocation('Dahab')"> <i class="fa-solid fa-location-dot"></i> Dahab</li>
+            <li onclick="showSelectedLocation('Sharm Elkshek')"> <i class="fa-solid fa-location-dot"></i> Sharm Elkshek</li>
+            <li onclick="showSelectedLocation('Cairo')"> <i class="fa-solid fa-location-dot"></i> Cairo</li>
+          </ul>
         </div>
         <div id="searchItem1">
           <form>
@@ -677,15 +686,6 @@
         </div>
       </div>
       <!-- 1st div for the search bar with display None -->
-      <div id="peopleNearbyDiv" class="shadow">
-        <p class="fw-bold align-self-start">People Near Your Destination</p>
-        <ul>
-          <li onclick="showSelectedLocation('Hurgada')"> <i class="fa-solid fa-location-dot"></i> Hurgada</li>
-          <li onclick="showSelectedLocation('Dahab')"> <i class="fa-solid fa-location-dot"></i> Dahab</li>
-          <li onclick="showSelectedLocation('Sharm Elkshek')"> <i class="fa-solid fa-location-dot"></i> Sharm Elkshek</li>
-          <li onclick="showSelectedLocation('Cairo')"> <i class="fa-solid fa-location-dot"></i> Cairo</li>
-        </ul>
-      </div>
       <!-- form check -->
       <div class="d-flex p-1 align-self-start">
         <div class="p-2">

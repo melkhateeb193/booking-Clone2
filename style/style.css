@@ -142,7 +142,7 @@ i.fa-solid.fa-question {
   border: 3px solid orange ;
   background-color: white;
   position: absolute;
-  bottom: 35%;
+  bottom: 33%;
   right: 5%;
   width: 90%;
 }
@@ -339,6 +339,9 @@ font-size: 12px;;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    top: 50px;
+    left: 0px;
+    z-index: 999999999;
   }
 
   /* Style for the people nearby div title */
@@ -411,13 +414,6 @@ font-size: 12px;;
       border: none !important;;
       cursor: pointer;
     }
-
-    @media only screen and (min-width: 600px) {
-      body {
-
-      }
-    }
-
 
     #container {
       width: 100% !important;
